@@ -1,0 +1,58 @@
+html,body{
+    height: 140%;
+    overflow-x: hidden;
+}
+.Body{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    /* background: #020412; */
+}
+
+h1{
+    color: #fff724;
+    font-size: 40px;
+    position: absolute;
+    left: 16%;
+    margin-top: 20px;
+}
+
+.story{
+    position: absolute;
+    left: 16%;
+    margin-top: 50px;
+    font-size: 20px;
+    width: 1025px;
+}
+
+.Lpipe{
+    position: absolute;
+    width: 182px;
+    margin-top: 350px;
+    left: 0px;
+    height: 263px;
+}
+
+.mLooking{
+    position: absolute;
+    width: 154px;
+    left: 28px;
+    top: 70%;
+}
+
+.Rpipe{
+    position: absolute;
+    width: 230px;
+    height: 100px;
+    margin-top: 355px;
+    left: 87.5%;
+    height: 263px;
+}
+
+.Hmario{
+    position: absolute;
+    width: 154px;
+    left: 90%;
+    top: 58%;
+}

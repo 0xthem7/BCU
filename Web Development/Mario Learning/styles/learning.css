@@ -1,0 +1,173 @@
+html,body{
+    overflow-x: hidden;
+    height: 185%;
+}
+
+.types{
+    font-size: 30px;
+    color: #FFF724;
+}
+
+
+.stuff1{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.robo{
+    width: 200px;
+}
+
+.basedOn{
+    margin-left: 200px;
+    margin-top: -150px;
+}
+
+.list1{
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.supervised, .unsupervised{
+    font-size: 25px;
+    color: #FFF724;
+    margin-top: 105px;
+    margin-left: 20px;
+}
+
+.stuff3Sec1, .stuff3Sec2{
+    width: 85%;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+.stuff3Sec2{
+    margin-top: 25px;
+}
+
+.cat{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+
+
+.stuff3sec1{
+    margin-top: 15px;
+    width: 85%;
+    margin-left: 55px;
+}
+
+.stuff3sec2{
+    margin-top: 20px;
+    margin-left: 55px;
+} 
+
+.stuff3sec3{
+    margin-top: 15px;
+    width: 85%;
+    margin-left: 55px;
+}
+
+.dolly{
+    margin-top: -150px;
+    margin-left:  80%;
+    width: 250px;
+}
+
+.semi-supervised{
+    margin-top: -90px;
+}
+
+.stuff4sec1, .stuff4sec2, .stuff5sec1, .stuff5sec2, .stuff5sec3{
+    margin-top: 20px;
+    margin-left: 55px;
+    width:  82%;
+}
+
+.tds1{
+    margin-top: 20%;
+}
+.semi-supervised, .reinforcement{
+    font-size: 25px;
+    color: #FFF724;
+    margin-left: 20px;
+
+}
+
+.reinforcement{
+    margin-top: 35px;
+}
+
+.cat1{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.ds{
+    width: 180px;
+}
+
+.this{
+    margin-top: -100px;
+    margin-left: 13%;
+}
+
+.this1{
+    margin-top: 40px;
+}
+
+.list1{
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.stuff0sec3{
+    width: 70%;
+    margin-left: 55px;
+}
+
+.tds{
+    font-size: 25px;
+    color: #FFF724;
+    margin-top: 3%;
+}
+
+.stuff4sec0{
+    margin-left: 4.5%;
+}
+
+.stuff4sec00{
+    margin-left: 3%;
+}
+
+.dolly2{
+    width: 7.5%;
+}
+
+.dolly20{
+    width: 7.5%;
+    margin-left: 90%;
+    margin-top:0%
+}
+
+.stuff4sec001{
+    width: 80%;
+    margin-top: -11%;
+    margin-left: 10%;
+}
+
+.kiddo{
+    font-size: 25px;
+    color: #FFF724;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.cat2{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 85px;
+}

@@ -1,0 +1,77 @@
+
+
+.logo_footer{
+    margin-top: 30px;
+    width: 200px;
+    cursor: pointer;
+    float: left;
+}
+
+.marioText{
+    margin-top: 40px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 80px;
+    float: left;
+}
+
+.buttons{
+    margin-top: 250px;
+    margin-left: -30px;
+}
+.research{
+   margin-left: 230px;  
+}
+.researchText, .githubText{
+    margin-left: 300px;
+    margin-top: -37px;
+    text-decoration: none;
+}
+
+.facebook{
+    margin: -70px 600px 5px;
+}
+.facebookText, .instagramText{
+    margin-left: 700px;
+    margin-top: -37px;
+    text-decoration: none;
+}
+
+.whatsapp{
+    margin: -70px 970px 5px;
+}
+
+.whatsappText, .twitterText{
+    margin-left: 1070px;
+    margin-top: -37px;
+    text-decoration: none;
+}
+.github{
+    margin-top: 70px ;
+    margin-left: 225px;
+}
+
+.instagram{
+    margin: -70px 600px 5px;
+}
+
+
+.twitter{
+    margin: -70px 970px 5px;
+}
+
+.machine-learning{
+    margin: -300px 85% 5px;
+}
+
+.machine-learningText{
+    margin-top: -10px;
+    margin-left: 85%;
+}
+
+.finalText{
+    padding-left: 10%;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff724;
+}

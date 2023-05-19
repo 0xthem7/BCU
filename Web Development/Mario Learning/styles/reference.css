@@ -1,0 +1,26 @@
+html, body{
+    overflow-x:  hidden;
+    height: 140%;
+}
+
+.thanks{
+    color: #FFF724;
+    margin-left: 25%;
+    font-size: 25px;
+}
+
+.learning{
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+.text{
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.mariooo{
+    width: 25%;
+    margin-left: 70%;
+    margin-top: -20%;
+}
