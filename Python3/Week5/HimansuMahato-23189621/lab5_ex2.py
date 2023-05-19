@@ -1,42 +1,47 @@
 # Get function iter 
-def get_next_point(step):
+#variables
 
+coordinate = () #This is the varaible which stores the cordinates
+cooStore = [] # It stores all the coordinates for further processing 
+distance = [] # It stores data provided by 
+
+
+def get_next_point(step):
+    '''This is the function which takes step and returns the cordinates for further works.'''
     x = int(input(f"\nInput x{step} coordinates: "))
     y = int(input(f"\nInput y{step} coordinates: "))
     return(x,y) # Sending back x and y 
  
 def cal_distance(p1,p2):
+    '''THis is the function which calculates the distance'''
     distance = (int(pow((p2[0] - p1[0]),2)) + int(pow((p2[1] - p1[1]),2)))
     distance = pow(distance,0.5)
     return distance
 
-def main():
-    print("------Robot Program------")
- 
-    running = True # For inifite running code 
-    step = [(0,0)] # stores co-ordinate
+def printer():
     total = 0
-    iter = 1 
-    printer = 1
-    distance = [] # stores distance data 
- 
-    while running:
-        p1 = get_next_point(iter)
-        step.append(p1)
-        iter += 1 
-        if p1 == (999,999):
-            running = False
-            len_of_cal = len(step) # Function to find out the length of the step list which has stored co-ordinates
- 
-            for i in range(((int(len_of_cal/2))+1)):
-                distance.append(cal_distance(step[i], step[i+1]))
-            print("-"*10)
-            for number in distance:
-                print("Step {}: {:.2f} units".format(printer, number))
-                printer += 1
-                total += number
-            print(f'Total distance trallveld by the robot: {total} units ') 
-            print("-"*10)
+    print("-"*10)
+    for i,item in enumerate(distance):
+        print(f"Step {i+1}: {item:.2f} units")
+        total += item
+    print("-"*10)
+    print(f"Total distance trallveld by the robot: {total:.2f}")
+        
+def main():
+    global coordinate, cooStore, distance
+    print("------Robot Program------") 
+    step = 0 
+    
+    while coordinate!=(999,999):
+        coordinate = get_next_point(step)
+        cooStore.append(coordinate)
+        step += 1 
+    else:
+        len_of_cal = len(cooStore) # Function to find out the length of the step list which has stored co-ordinates
+        # Storing the calculated distance
+        for i in range(((int(len_of_cal/2)))):
+            distance.append(cal_distance(cooStore[i], cooStore[i+1]))
+        printer() 
  
 if __name__ == "__main__":
     main()
