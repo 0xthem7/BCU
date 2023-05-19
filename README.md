@@ -1,1 +1,4 @@
-# Sems-1
+##Semester wise notes
+* **Computer Programming**
+* **Computer System**
+* **Web Development**
