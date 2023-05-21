@@ -15,9 +15,19 @@
     cursor: pointer;
 }
 
-.menu-icon{
-    width: 140px;
+.logo_phone{
+    width: 250px;
     cursor: pointer;
+    display: none;
+}
+
+.mario_bros{
+    width: 10%;
+    cursor: pointer;
+}
+
+.mario_brosPhone{
+    display: none;
 }
 
 nav{
@@ -45,4 +55,25 @@ nav ul li a{
     letter-spacing: 1px;
     font-size: 17px;
 }
-    
+
+@media only screen and (max-width:1342px){
+    nav ul{
+        display: none;
+    }
+    .logo, .mario_bros{
+        display: none;
+    }
+    .logo_phone{
+        display: block;
+        width: 30%;
+        margin-top: 6%;
+    }
+    .mario_brosPhone{
+        display: block;
+        cursor: pointer;
+        margin-left: 75%;
+        margin-top: -28%;
+        width: 35%;
+        
+    }
+}
