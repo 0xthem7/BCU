@@ -1,67 +1,86 @@
 
 
 .logo_footer{
-    margin-top: 30px;
-    width: 200px;
+    
+    margin-top: 2%;
+    width: 12%;
     cursor: pointer;
     float: left;
 }
 
 .marioText{
-    margin-top: 40px;
-    font-size: 20px;
-    padding-left: 30px;
-    padding-top: 80px;
+    margin-top: 5%;
+    font-size: 150%;
+    padding-left: 5%;
+    padding-top: 5%;
     float: left;
 }
 
 .buttons{
-    margin-top: 250px;
-    margin-left: -30px;
+
+    margin-top: 15%;
+    margin-left: 10%;
 }
 .research{
-   margin-left: 230px;  
+   margin-left: 10%;  
+   width: 3.5%;
 }
 .researchText, .githubText{
-    margin-left: 300px;
-    margin-top: -37px;
+    margin-left: 14%;
+    margin-top: -2.8%;
+    font-size: 140%;
     text-decoration: none;
 }
 
 .facebook{
-    margin: -70px 600px 5px;
+    margin-left: 37%;
+    margin-top: -25%;
+    padding: 0;
+    width: 3.5%;
+    
+
 }
 .facebookText, .instagramText{
-    margin-left: 700px;
-    margin-top: -37px;
+    margin-left: 42%;
+    margin-top: -2.8%;
+    font-size: 140%;
     text-decoration: none;
 }
 
 .whatsapp{
-    margin: -70px 970px 5px;
+    margin-left: 60%;
+    margin-top: -25%;
+    padding: 0;
+    width: 3.5%;
 }
 
 .whatsappText, .twitterText{
-    margin-left: 1070px;
-    margin-top: -37px;
+    margin-left: 65%;
+    font-size: 150%;
+    margin-top: -2.8%;
     text-decoration: none;
 }
 .github{
-    margin-top: 70px ;
-    margin-left: 225px;
+    margin-top:  6%;
+    margin-left: 10%;
+    width: 3.5%;
 }
 
 .instagram{
-    margin: -70px 600px 5px;
+    width: 3.5%;
+    margin-left: 37%;
+    margin-top: -3.7%;
 }
 
 
 .twitter{
-    margin: -70px 970px 5px;
+    width: 3.5%;
+    margin-left: 60%;
+    margin-top: -25%;
 }
 
 .machine-learning{
-    margin: -300px 85% 5px;
+    margin: -20% 85% 1%;
 }
 
 .machine-learningText{
@@ -71,7 +90,12 @@
 
 .finalText{
     padding-left: 10%;
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 5%;
+    font-size: 150%;
     color: #fff724;
+}
+
+@media only screen and (max-width:1342px){
+    
+
 }
