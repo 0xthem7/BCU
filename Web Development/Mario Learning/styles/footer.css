@@ -1,5 +1,3 @@
-
-
 .logo_footer{
     
     margin-top: 2%;
@@ -16,127 +14,23 @@
     float: left;
 }
 
-.buttons{
-
+.grid-container {
+    width: 70%;
     margin-top: 15%;
-    margin-left: 10%;
-}
-.research{
-    /* margin-top: %; */
-   margin-left: 10%;  
-   width: 3.5%;
-}
-.researchText, .githubText{
-    margin-left: 14%;
-    margin-top: -2.8%;
-    font-size: 140%;
-    text-decoration: none;
-}
-
-.facebook{
-    margin-left: 37%;
-    margin-top: -5%;
-    padding-top: -5%;
-    width: 3.5%;
-    
-
-}
-.facebookText, .instagramText{
-    margin-left: 42%;
-    margin-top: -2.8%;
-    font-size: 140%;
-    text-decoration: none;
-}
-
-.whatsapp{
-    margin-left: 60%;
-    margin-top: -25%;
-    padding: 0;
-    width: 3.5%;
-}
-
-.whatsappText, .twitterText{
-    margin-left: 65%;
-    font-size: 150%;
-    margin-top: -2.8%;
-    text-decoration: none;
-}
-.github{
-    margin-top:  6%;
-    margin-left: 10%;
-    width: 3.5%;
-}
-
-.instagram{
-    width: 3.5%;
-    margin-left: 37%;
-    margin-top: -3.7%;
-}
-
-
-.twitter{
-    width: 3.5%;
-    margin-left: 60%;
-    margin-top: -25%;
-}
-
-.machine-learning{
-    margin: -20% 85% 1%;
-}
-
-.machine-learningText{
-    margin-top: -10px;
-    margin-left: 85%;
-}
-
-.finalText{
-    padding-left: 10%;
-    margin-top: 5%;
-    font-size: 150%;
-    color: #fff724;
-}
-
-@media only screen and (max-width:1342px){
-    .logo_footer{
-        width: 20%;
-    }
-    .marioText{
-        font-size:  60%;
-        width: 70%;
-        margin-left: 25%;
-        margin-top: -15%;
-    }
-    .research{
-        width: 8%;
-        margin-top: 20%;
-        margin-left: -15%;
-    }
-    .researchText{
-        font-size: 80%;
-        margin-left: 7%;
-        margin-top: -8%;
-    }
-
-    .github{
-        position: absolute;
-        width: 8%;
-        z-index: 9;
-        margin-top: -45%;
-        margin-left: -5%;
-    }
-    
-    .githubText{
-        z-index: 9;
-        font-size: 80%;
-        margin-left: 7%;
-        margin-top: -48%;
-    }
-
-    .facebook{
-        width: 8%;
-        margin-top: 30%;
-        margin-left: -5%;
-        padding: 0;
-    }
-
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    display: grid;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+.text{
+    text-decoration: underline;
+    font-size: 70%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: -15%;
 }
