@@ -109,8 +109,6 @@ html,body{
         font-size: 17px;
 
     }
-    
-    
     .text-boxPhone .TL{
         margin-top: 20%;
     }
@@ -121,6 +119,7 @@ html,body{
         padding: 20px 40px;
         border-radius: 6px;
         border: 2px solid #fff724;
+        border-spacing: 20%;
         background: #000;
         outline: 2px solid #000;
 
