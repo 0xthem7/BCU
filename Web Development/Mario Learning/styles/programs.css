@@ -92,3 +92,44 @@ html,body{
     color: #000;
     margin-left: 30px;
 }
+
+.text-boxPhone{
+    display: none;
+}
+
+@media only screen and (max-width:1440px){
+    .text-box{
+        display: none;
+    }
+
+    .text-boxPhone{
+        display: block;
+        margin-top: 20%;
+        margin-left: 30%;
+        font-size: 17px;
+
+    }
+    
+    
+    .text-boxPhone .TL{
+        margin-top: 20%;
+    }
+    
+
+    td{
+        width: 70%;
+        padding: 20px 40px;
+        border-radius: 6px;
+        border: 2px solid #fff724;
+        background: #000;
+        outline: 2px solid #000;
+
+    }
+    .text-boxPhone p, a{
+        color: #fff724;
+        text-align: center;
+        background: #000;
+    }
+    
+    
+}
