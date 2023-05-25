@@ -67,6 +67,10 @@ class Admin:
                             ... the speciality of the doctor in that order.
         """
         #ToDo2
+        self.__first_name = input('First name: ')
+        self.__surname = input('Surname: ')
+        self.__speciality = input('Speciality: ')
+        return [self.__first_name, self.__surname, self.__speciality]
 
     def doctor_management(self, doctors):
         """
@@ -74,8 +78,7 @@ class Admin:
         Args:
             doctors (list<Doctor>): the list of all the doctors names
         """
-        for doc in doctors:
-            print(doc.full_name())
+        
 
         print("-----Doctor Management-----")
 
@@ -96,7 +99,7 @@ class Admin:
 
             # get the doctor details
             print('Enter the doctor\'s details:')
-            self.get_doctor_details()
+            first_name, surname, speciality = self.get_doctor_details()
 
 
             # check if the name is already registered
@@ -105,18 +108,22 @@ class Admin:
                 if first_name == doctor.get_first_name() and surname == doctor.get_surname():
                     print('Name already exists.')
                     #ToDo5
-                    pass # save time and end the loop
+                    name_exists = True
+                    break # save time and end the loop
 
             #ToDo6
-            pass# add the doctor ...
+            if name_exists == False:
+                doctors.append(Doctor(first_name, surname, speciality))
                                                          # ... to the list of doctors
-            print('Doctor registered.')
+                print('Doctor registered.')
 
         # View
         elif op == '2':
             print("-----List of Doctors-----")
-            #ToDo7
-            pass
+            # ToDo7
+            for doc in doctors:
+                print(doc)
+
 
         # Update
         elif op == '3':
@@ -128,7 +135,7 @@ class Admin:
                     index = int(input('Enter the ID of the doctor: ')) - 1
                     doctor_index=self.find_index(index,doctors)
                     if doctor_index!=False:
-                
+                        
                         break
                         
                     else:
@@ -149,7 +156,15 @@ class Admin:
             op = int(input('Input: ')) # make the user input lowercase
 
             #ToDo8
-            pass
+            if op == 1:
+                first_name = input('First name: ')
+                doctors[index].set_first_name(first_name)
+            elif op == 2:
+                surname = input('Surname: ')
+                doctors[index].set_surname(surname)
+            elif op == 3:
+                speciality = input('Speciality: ')
+                doctors[index].set_speciality(speciality)
 
         # Delete
         elif op == '4':
@@ -157,17 +172,20 @@ class Admin:
             print('ID |          Full Name           |  Speciality')
             self.view(doctors)
 
-            doctor_index = input('Enter the ID of the doctor to be deleted: ')
+            doctor_index = int(input('Enter the ID of the doctor to be deleted: ')) -1
             #ToDo9
-            pass
-
-           
-            print('The id entered is incorrect')
-
+            
+            if doctor_index >= 0 and doctor_index <= len(doctors):
+                del doctors[doctor_index]
+                print("Doctor Deleted")
+            else:
+                print('The id entered is incorrect')
         # if the id is not in the list of patients
         else:
             print('Invalid operation choosen. Check your spelling!')
 
+
+# Yeha samma bhayo
 
     def view_patient(self, patients):
         """
@@ -177,8 +195,8 @@ class Admin:
         """
         print("-----View Patients-----")
         print('ID |          Full Name           |      Doctor`s Full Name      | Age |    Mobile     | Postcode ')
-        #ToDo10
-        pass
+        self.view(patients)
+        
 
     def assign_doctor_to_patient(self, patients, doctors):
         """
@@ -226,7 +244,7 @@ class Admin:
                     
                 # link the patients to the doctor and vice versa
                 #ToDo11
-                pass
+                doctors[doctor_index].add_patient(patient_index)
                 
                 print('The patient is now assign to the doctor.')
 
@@ -246,11 +264,11 @@ class Admin:
             discharge_patients (list<Patients>): the list of all the non-active patients
         """
         print("-----Discharge Patient-----")
-
-        patient_index = input('Please enter the patient ID: ')
-
         #ToDo12
-        pass
+        self.view(patients)
+        patient_index = int(input('Please enter the patient ID: ')) - 1 
+        return patient_index
+        
 
     def view_discharge(self, discharged_patients):
         """
@@ -262,7 +280,7 @@ class Admin:
         print("-----Discharged Patients-----")
         print('ID |          Full Name           |      Doctor`s Full Name      | Age |    Mobile     | Postcode ')
         #ToDo13
-        pass
+        self.view(discharged_patients)
 
     def update_details(self):
         """
@@ -277,8 +295,7 @@ class Admin:
 
         if op == 1:
             #ToDo14
-            pass
-
+            self.__username = input("Username: ")
         elif op == 2:
             password = input('Enter the new password: ')
             # validate the password
@@ -287,9 +304,9 @@ class Admin:
 
         elif op == 3:
             #ToDo15
-            pass
+            self.__address == input('Address: ')
 
         else:
             #ToDo16
-            pass
+            print('Invaild input')
 

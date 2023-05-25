@@ -1,7 +1,14 @@
 # Imports
+from tkinter import *
 from Admin import Admin
 from Doctor import Doctor
 from Patient import Patient
+
+#GUI Part
+
+
+
+
 
 def main():
     """
@@ -38,19 +45,19 @@ def main():
         if op == '1':
             # 1- Register/view/update/delete doctor
          #ToDo1
-          admin.doctor_management(doctors)
-
+            admin.doctor_management(doctors)
         elif op == '2':
             # 2- View or discharge patients
             #ToDo2
-            pass
-
+            patient_index = admin.discharge(patients, discharged_patients)
             while True:
                 op = input('Do you want to discharge a patient(Y/N):').lower()
 
                 if op == 'yes' or op == 'y':
                     #ToDo3
-                    pass
+                    discharged_patients.append(patients[patient_index])
+                    del patients[patient_index]
+                    break
 
                 elif op == 'no' or op == 'n':
                     break
@@ -60,7 +67,7 @@ def main():
                     print('Please answer by yes or no.')
         
         elif op == '3':
-            # 3 - view discharged patients
+            admin.view_discharge(discharged_patients)
             #ToDo4
             pass
 

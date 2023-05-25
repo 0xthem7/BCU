@@ -45,7 +45,7 @@ class Doctor:
         self.__speciality = new_speciality
 
     def add_patient(self, patient):
-        self.patients.append(patient)
+        self.__patients.append(patient)
 
 
     def __str__(self) :
