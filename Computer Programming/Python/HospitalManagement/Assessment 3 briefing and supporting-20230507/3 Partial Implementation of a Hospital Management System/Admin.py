@@ -90,7 +90,7 @@ class Admin:
         print(' 4 - Delete')
 
         #ToDo3
-        op = input(': ')
+        op = input('> ')
 
 
         # register
@@ -244,8 +244,10 @@ class Admin:
                     
                 # link the patients to the doctor and vice versa
                 #ToDo11
-                doctors[doctor_index].add_patient(patient_index)
-                
+
+                patients[patient_index].link(doctors[doctor_index].full_name())
+                print(patients[patient_index].get_doctor())
+                doctors[doctor_index].add_patient(patients[patient_index].full_name())
                 print('The patient is now assign to the doctor.')
 
             # if the id is not in the list of doctors
@@ -295,7 +297,7 @@ class Admin:
 
         if op == 1:
             #ToDo14
-            self.__username = input("Username: ")
+            self.__username = input("Enter the new Username: ")
         elif op == 2:
             password = input('Enter the new password: ')
             # validate the password
@@ -304,9 +306,9 @@ class Admin:
 
         elif op == 3:
             #ToDo15
-            self.__address == input('Address: ')
+            self.__address = input("Enter the new address: ")
 
         else:
             #ToDo16
-            print('Invaild input')
+            print("Invalid input")
 

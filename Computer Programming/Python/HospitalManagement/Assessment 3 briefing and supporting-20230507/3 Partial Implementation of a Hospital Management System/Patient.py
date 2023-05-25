@@ -34,7 +34,7 @@ class Patient:
     def link(self, doctor):
         """Args: doctor(string): the doctor full name"""
         self.__doctor = doctor
-
+    
     def print_symptoms(self):
         """prints all the symptoms"""
         #ToDo4
