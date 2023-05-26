@@ -83,7 +83,7 @@ def main():
         elif op == '5':
             # 5- Update admin detais
             admin.update_details()
-
+            DB.UpdateUser(admin.get_username(), admin.get_password(), admin.get_address())
         elif op == '6':
             # 6 - Quit
             #ToDo5

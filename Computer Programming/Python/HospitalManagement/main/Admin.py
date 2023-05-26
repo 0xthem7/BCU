@@ -4,7 +4,7 @@ from Doctor import Doctor
 
 class Admin:
     """A class that deals with the Admin operations"""
-    def __init__(self, username, password, address = ''):
+    def __init__(self, username, password, address):
         """
         Args:
             username (string): Username
@@ -15,6 +15,14 @@ class Admin:
         self.__username = username
         self.__password = password
         self.__address =  address
+    
+    #Created by user to handle file management
+    def get_username(self):
+        return self.__username
+    def get_password(self):
+        return self.__password
+    def get_address(self):
+        return self.__address
 
     def view(self,a_list):
         """
