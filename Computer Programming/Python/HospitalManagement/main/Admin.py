@@ -193,7 +193,6 @@ class Admin:
             print('Invalid operation choosen. Check your spelling!')
 
 
-# Yeha samma bhayo
 
     def view_patient(self, patients):
         """
@@ -204,8 +203,7 @@ class Admin:
         print("-----View Patients-----")
         print('ID |          Full Name           |      Doctor`s Full Name      | Age |    Mobile     | Postcode ')
         self.view(patients)
-        
-
+    
     def assign_doctor_to_patient(self, patients, doctors):
         """
         Allow the admin to assign a doctor to a patient
@@ -213,57 +211,124 @@ class Admin:
             patients (list<Patients>): the list of all the active patients
             doctors (list<Doctor>): the list of all the doctors
         """
-        print("-----Assign-----")
+        noDoctorPatients = []
+        DoctorPatients = []
+        for patient in patients:
+            if patient.get_doctor() == 'None':
+                noDoctorPatients.append(patient)
+            else:
+                DoctorPatients.append(patient)
 
-        print("-----Patients-----")
-        print('ID |          Full Name           |      Doctor`s Full Name      | Age |    Mobile     | Postcode ')
-        self.view(patients)
+        # print('Choose the field to be updated:')
+        print(' 1 Assign a Doctor')
+        print(' 2 Reassign new Doctor')
+        option = input(' > ')
+        if option == '1':
+            print("-----Assign-----")
 
-        patient_index = input('Please enter the patient ID: ')
+            print("-----Patients-----")
+            print('ID |          Full Name           |      Doctor`s Full Name      | Age |    Mobile     | Postcode ')
+            self.view(noDoctorPatients)
+            patient_index = input('Please enter the patient ID: ')
+            symptoms = input('Please enter symptoms of the patients: ')
+            patients[int(patient_index) - 1].set_symptoms(symptoms)
+            try:
+                # patient_index is the patient ID mines one (-1)
+                patient_index = int(patient_index) -1
 
-        try:
-            # patient_index is the patient ID mines one (-1)
-            patient_index = int(patient_index) -1
+                # check if the id is not in the list of patients
+                if patient_index not in range(len(patients)):
+                    print('The id entered was not found.')
+                    return # stop the procedures
 
-            # check if the id is not in the list of patients
-            if patient_index not in range(len(patients)):
-                print('The id entered was not found.')
+            except ValueError: # the entered id could not be changed into an int
+                print('The id entered is incorrect')
                 return # stop the procedures
 
-        except ValueError: # the entered id could not be changed into an int
-            print('The id entered is incorrect')
-            return # stop the procedures
+            print("-----Doctors Select-----")
+            print('Select the doctor that fits these symptoms:')
+            noDoctorPatients[patient_index].print_symptoms() # print the patient symptoms
+            print('--------------------------------------------------')
+            print('ID |          Full Name           |  Speciality   ')
+            self.view(doctors)
+            doctor_index = input('Please enter the doctor ID: ')
 
-        print("-----Doctors Select-----")
-        print('Select the doctor that fits these symptoms:')
-        patients[patient_index].print_symptoms() # print the patient symptoms
+            try:
+                # doctor_index is the patient ID mines one (-1)
+                doctor_index = int(doctor_index) -1
 
-        print('--------------------------------------------------')
-        print('ID |          Full Name           |  Speciality   ')
-        self.view(doctors)
-        doctor_index = input('Please enter the doctor ID: ')
+                # check if the id is in the list of doctors
+                if self.find_index(doctor_index,doctors)!=False:
+                        
+                    # link the patients to the doctor and vice versa
+                    #ToDo11
 
-        try:
-            # doctor_index is the patient ID mines one (-1)
-            doctor_index = int(doctor_index) -1
+                    noDoctorPatients[patient_index].link(doctors[doctor_index].full_name())
+                    doctors[doctor_index].add_patient(patients[patient_index].full_name())
+                    print('The patient is now assign to the doctor.')
 
-            # check if the id is in the list of doctors
-            if self.find_index(doctor_index,doctors)!=False:
-                    
-                # link the patients to the doctor and vice versa
-                #ToDo11
+                # if the id is not in the list of doctors
+                else:
+                    print('The id entered was not found.')
 
-                patients[patient_index].link(doctors[doctor_index].full_name())
-                print(patients[patient_index].get_doctor())
-                doctors[doctor_index].add_patient(patients[patient_index].full_name())
-                print('The patient is now assign to the doctor.')
+            except ValueError: # the entered id could not be changed into an in
+                print('The id entered is incorrect')
 
-            # if the id is not in the list of doctors
-            else:
-                print('The id entered was not found.')
+        elif option == '2':
+            print("-----Assign-----")
 
-        except ValueError: # the entered id could not be changed into an in
-            print('The id entered is incorrect')
+            print("-----Patients-----")
+            print('ID |          Full Name           |      Doctor`s Full Name      | Age |    Mobile     | Postcode ')
+            self.view(DoctorPatients)
+            patient_index = input('Please enter the patient ID: ')
+            symptoms = input('Please enter symptoms of the patients: ')
+            DoctorPatients[int(patient_index) - 1].set_symptoms(symptoms)
+            try:
+                # patient_index is the patient ID mines one (-1)
+                patient_index = int(patient_index) -1
+
+                # check if the id is not in the list of patients
+                if patient_index not in range(len(patients)):
+                    print('The id entered was not found.')
+                    return # stop the procedures
+
+            except ValueError: # the entered id could not be changed into an int
+                print('The id entered is incorrect')
+                return # stop the procedures
+
+            print("-----Doctors Select-----")
+            print('Select the doctor that fits these symptoms:')
+            DoctorPatients[patient_index].print_symptoms() # print the patient symptoms
+
+            print('--------------------------------------------------')
+            print('ID |          Full Name           |  Speciality   ')
+            self.view(doctors)
+            doctor_index = input('Please enter the doctor ID: ')
+
+            try:
+                # doctor_index is the patient ID mines one (-1)
+                doctor_index = int(doctor_index) -1
+
+                # check if the id is in the list of doctors
+                if self.find_index(doctor_index,doctors)!=False:
+                        
+                    # link the patients to the doctor and vice versa
+                    #ToDo11
+
+                    DoctorPatients[patient_index].link(doctors[doctor_index].full_name())
+                    doctors[doctor_index].add_patient(patients[patient_index].full_name())
+                    print('The patient is now assign to the doctor.')
+
+                # if the id is not in the list of doctors
+                else:
+                    print('The id entered was not found.')
+
+            except ValueError: # the entered id could not be changed into an in
+                print('The id entered is incorrect')
+        else:
+            print('Something went wrong')
+        
+        patients = noDoctorPatients + DoctorPatients
 
 
     def discharge(self, patients, discharge_patients):
@@ -280,6 +345,7 @@ class Admin:
         return patient_index
         
 
+
     def view_discharge(self, discharged_patients):
         """
         Prints the list of all discharged patients
@@ -291,6 +357,7 @@ class Admin:
         print('ID |          Full Name           |      Doctor`s Full Name      | Age |    Mobile     | Postcode ')
         #ToDo13
         self.view(discharged_patients)
+
 
     def update_details(self):
         """

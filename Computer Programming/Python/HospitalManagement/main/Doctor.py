@@ -16,11 +16,11 @@ class Doctor:
         self.__appointments = []
 
     
-    def full_name(self) :
+    def full_name(self):
         #ToDo1
         return f'{self.__first_name} {self.__surname}'
 
-    def get_first_name(self) :
+    def get_first_name(self):
         #ToDo2
         return self.__first_name
 
@@ -28,7 +28,7 @@ class Doctor:
         #ToDo3
         self.__first_name = new_first_name
 
-    def get_surname(self) :
+    def get_surname(self):
         #ToDo4
         return self.__surname
 
@@ -36,7 +36,7 @@ class Doctor:
         #ToDo5
         self.__surname = new_surname
 
-    def get_speciality(self) :
+    def get_speciality(self):
         #ToDo6
         return self.__speciality
 

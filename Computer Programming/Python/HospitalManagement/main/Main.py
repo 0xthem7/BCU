@@ -19,13 +19,13 @@ def main():
     """
     the main function to be ran when the program runs
     """
-
+    DB.sort_patients()
     # Initialising the actors
     admin = DB.CreateAdmin() # username is 'admin', password is '123'
     doctors = DB.CreateDoctors()
-    patients = [Patient('Sara','Smith', 20, '07012345678','B1 234'), Patient('Mike','Jones', 37,'07555551234','L2 2AB'), Patient('Daivd','Smith', 15, '07123456789','C1 ABC')]
-    discharged_patients = []
-
+    patients = DB.CreatePatients()
+    discharged_patients = DB.discharged_patients()
+    
     # keep trying to login tell the login details are correct
     while True:
         if admin.login():
@@ -51,39 +51,45 @@ def main():
             # 1- Register/view/update/delete doctor
          #ToDo1
             admin.doctor_management(doctors)
+            DB.UpdateDoctor(doctors)
         elif op == '2':
             # 2- View or discharge patients
             #ToDo2
-            patient_index = admin.discharge(patients, discharged_patients)
-            while True:
-                op = input('Do you want to discharge a patient(Y/N):').lower()
+            try:
+                patient_index = admin.discharge(patients, discharged_patients)
+                while True:
+                    op = input('Do you want to discharge a patient(Y/N):').lower()
 
-                if op == 'yes' or op == 'y':
-                    #ToDo3
-                    discharged_patients.append(patients[patient_index])
-                    del patients[patient_index]
-                    break
+                    if op == 'yes' or op == 'y':
+                        #ToDo3
+                        discharged_patients.append(patients[patient_index])
+                        DB.add_discharged_patients(discharged_patients)
+                        del patients[patient_index]
+                        DB.Updatepatients(patients)
+                        DB.sort_patients()
+                        break
 
-                elif op == 'no' or op == 'n':
-                    break
+                    elif op == 'no' or op == 'n':
+                        break
 
-                # unexpected entry
-                else:
-                    print('Please answer by yes or no.')
-        
+                    # unexpected entry
+                    else:
+                        print('Please answer by yes or no.')
+            except:
+                print('Something went wrong! Please check your input and Database')
+            
         elif op == '3':
             admin.view_discharge(discharged_patients)
-            #ToDo4
-            pass
+            
 
         elif op == '4':
             # 4- Assign doctor to a patient
             admin.assign_doctor_to_patient(patients, doctors)
-
+            DB.Updatepatients(patients)
         elif op == '5':
             # 5- Update admin detais
             admin.update_details()
-            DB.UpdateUser(admin.get_username(), admin.get_password(), admin.get_address())
+            DB.UpdateAdmin(admin.get_username(), admin.get_password(), admin.get_address())
         elif op == '6':
             # 6 - Quit
             #ToDo5
