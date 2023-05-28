@@ -26,3 +26,6 @@ for data in squaredData:
 
 # Dividing by 5 which gives us the standard deviation
 print(sqrt(summation / 5)) # sqrt is a function which gives the square root 
+
+#Output
+10.051865498503252

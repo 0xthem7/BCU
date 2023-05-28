@@ -51,6 +51,9 @@ class Customer:
 class Address:
     def __init__(self, number, street, town, post_code):
         self.__number = number
+        self.__street = street
+        self.__town = town
+        self.__post_code = post_code
   
     def get_number(self):
         return self.__number
@@ -109,25 +112,34 @@ def save_cRecords(lst):
     try: 
         with open('customerList.txt','a') as file:
             for client in lst:
-                file.write(f"{client.get_cID()},{client.get_first_name()},{client.get_second_name()},{client.get_address()},{client.get_balance()} \n")
+                file.write(f"{client.get_cID()},{client.get_first_name()},{client.get_second_name()},{str(client.get_address())},{client.get_balance()}\n")
+        file.close()
     except:
         return False
     else:
         return True
+
+
+
 
 c1 = Customer('12A','Rea','Koci',Address('42','Curzon Street','Birmingham', 'B4 2SU'),888)
 c2 = Customer('11A','Liora','Koci',Address('42b','Curzon Street2','Birmingham2', 'B4 2SU'),33)
 
 save_cRecords([c1,c2])
 
-def read_customerRecords(data_file):
-   
-    #todo11
-    pass
+
+def read_customerRecords(from_file):
+    try:
+        with open(from_file,'r') as file:
+            data = file.readlines()
+        file.close()
+        return data
+    except FileNotFoundError:
+        print('File not found')
 
 
 print(read_customerRecords('client_list.txt'))
-
+print(read_customerRecords('customerList.txt'))
 
 
 
