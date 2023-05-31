@@ -5,30 +5,35 @@ from Patient import Patient
 from databasemanagement import DATABASE
 
 
-class guiManager:
+class guiManager:   
     def __init__(self, root):
         self.root = root
         self.root.geometry("800x800")
         self.root.title("Login Form")
         self.root.resizable(width=0, height=0)
+        self.widgets = []
 
-        # Create a canvas for the aesthetic background
-        self.canvas = tk.Canvas(self.root, width=800, height=800)
-        self.canvas.pack()
+
+    
+    def background(self):
+         # Create a canvas for the aesthetic background
+        self.canvasLogin = tk.Canvas(self.root, width=800, height=800)
+        self.canvasLogin.pack()
 
         # Create a gradient background
-        gradient_id = self.canvas.create_rectangle(0, 0, 800, 800, fill="#1f2640", width=0)
-        self.canvas.tag_lower(gradient_id)
+        gradient_id = self.canvasLogin.create_rectangle(0, 0, 800, 800, fill="#1f2640", width=0)
+        self.canvasLogin.tag_lower(gradient_id)
 
         # Create the login form components
 
     def loginSystem(self,admin):
-        self.username_label = tk.Label(self.canvas, text="Username", font=("Arial", 16, "bold"), fg="white", bg="#1f2640")
-        self.username_entry = tk.Entry(self.canvas, font=("Helvetica", 14), fg="white", bg="#34495e")
-        self.password_label = tk.Label(self.canvas, text="Password", font=("Arial", 16, "bold"), fg="white", bg="#1f2640")
-        self.password_entry = tk.Entry(self.canvas, font=("Helvetica", 14), fg="white", bg="#34495e", show="*")
-        self.login_button = tk.Button(self.canvas, text="Login", font=("Arial", 14, "bold"), fg="white", bg="#34495e", command=lambda event: self.loginWork(admin))
-        self.result_label = tk.Label(self.canvas, text="", font=("Arial", 16), fg="red", bg="#1f2640")
+        self.background()
+        self.username_label = tk.Label(self.canvasLogin, text="Username", font=("Arial", 16, "bold"), fg="white", bg="#1f2640")
+        self.username_entry = tk.Entry(self.canvasLogin, font=("Helvetica", 14), fg="white", bg="#34495e")
+        self.password_label = tk.Label(self.canvasLogin, text="Password", font=("Arial", 16, "bold"), fg="white", bg="#1f2640")
+        self.password_entry = tk.Entry(self.canvasLogin, font=("Helvetica", 14), fg="white", bg="#34495e", show="*")
+        self.login_button = tk.Button(self.canvasLogin, text="Login", font=("Arial", 14, "bold"), fg="white", bg="#34495e", command=lambda event: self.loginWork(admin))
+        self.result_label = tk.Label(self.canvasLogin, text="", font=("Arial", 16), fg="red", bg="#1f2640")
         self.root.bind('<Return>', lambda event: self.loginWork(admin))
 
 
@@ -41,6 +46,12 @@ class guiManager:
         self.result_label.place(relx=0.5, rely=0.65, anchor=tk.CENTER)
 
 
+    def clear_widgets(self):
+        for widget in self.widgets:
+            widget.pack_forget()
+        self.widgets = []
+
+    
     def loginWork(self,admin):
         username = self.username_entry.get()
         password = self.password_entry.get()
@@ -48,10 +59,9 @@ class guiManager:
         # Check the username and password
         if admin.login(username,password):
             self.result_label.config(text="Right password", fg='green')
-            return True
+
         else:
             self.result_label.config(text="Wrong password", fg='red')
-            return False
 
         # Clear the entry fields
         self.username_entry.delete(0, tk.END)
@@ -61,9 +71,14 @@ class guiManager:
 def login(admin):
     root = tk.Tk()
     login_form = guiManager(root)
+    # login_form.background()
     login_form.loginSystem(admin)
     root.mainloop()
 
+
+
+
+DB = DATABASE()
 
 
 
@@ -75,3 +90,9 @@ def main():
     doctors = DB.CreateDoctors()
     patients = DB.CreatePatients()
     discharged_patients = DB.discharged_patients()
+    # login(admin)
+    if login(admin):
+        clear_widget()
+
+
+main()

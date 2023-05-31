@@ -28,11 +28,10 @@ def main():
     
     # keep trying to login tell the login details are correct
     while True:
-        if admin.login():
+        if login(admin):
             running = True # allow the program to run
             break
-        else:
-            print('Incorrect username or password.')
+
 
     while running:
         # print the menu
