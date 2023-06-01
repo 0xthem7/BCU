@@ -70,7 +70,7 @@ html,body{
     margin-left: 55px;
 }
 
-.dolly{
+.dollyx{
     margin-top: -150px;
     margin-left:  80%;
     width: 250px;
@@ -170,4 +170,123 @@ html,body{
     width: 80%;
     margin-top: 20px;
     margin-left: 85px;
+}
+
+@media only screen and (max-width:1296px){
+    .ds{
+        width: 10%;
+    }
+    .basedOn{
+        margin-left: 20%;
+    }
+    .list1{
+        margin-left: 22%;
+    }
+    .dollyx{
+        margin-left: 80%;
+        margin-top: -1%;
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width:1028px) {
+    .stuff2{
+        display: inline-block;
+        margin-top: 10%;
+    }
+
+    .robo{
+        margin-top: -4%;
+    }
+
+    .basedOn{
+        margin-top: 5%;
+    }
+    .list1{
+        margin-left: 25;
+    }
+
+}
+
+@media only screen and (max-width:730px) {
+    .ds{
+        width: 20%;
+    }
+    .stuff2{
+        display: inline-block;
+        margin-top: 15%;
+    }
+    .robo{
+        margin-top: -35%;
+        margin-left: 5% ;
+    }
+    .stuff4{
+        margin-top: 10%;
+    }
+    .basedOn{
+        margin-left: 10%;
+    }
+    .list1{
+        margin-left: 15%;
+    }
+    .dolly{
+        margin-left: 80%;
+        margin-top: -1%;
+        width: 15%;
+    }
+}
+
+
+
+@media only screen and (max-width:730px) {
+    .ds{
+        width: 40%;
+    }
+    .stuff2{
+        display: inline-block;
+        margin-top: 40%;
+    }
+    .so1{
+        margin-left: 20%;
+        margin-top: -40%;
+    }
+    .dolly2{
+        margin-top: 10%;
+        width: 20%;
+    }
+    .stuff4sec001{
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width:586px) {
+    .stuff2{
+        display: inline-block;
+        margin-top: 20%;
+        margin-left: -7%;
+    }
+    .so{
+        margin-left: 20%;
+        margin-top: -1%;
+        /* width: %; */
+    }
+    .robo{
+        margin-top: -10%;
+        width: 20%;
+    }
+    
+    .dolly2{
+        margin-top: 10%;
+        width: 20%;
+    }
+    .stuff4sec001{
+        margin-top: 10%;
+    }
+    .dollyx{
+        margin-left: 70%;
+        width: 20%;
+    }
+    .semi-supervised{
+        margin-top: 10%;
+    }
 }

@@ -6,11 +6,12 @@ html,body{
 
 .container{
 
-    /* margin-left: 20%; */
+    margin-left: 5%;
     white-space: nowrap;
     padding: 1em 0.5em;
     display: inline-block;
     width: 95%;
+    margin-top: 20%;
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -32,14 +33,6 @@ html,body{
     flex-shrink: 0;
 }
 
-.text{
-  color: #fff724;
-  font-size: 300%;
-  margin-left: 10%;
-  margin-top: 2%;
-  padding-bottom:5%;
-}
-
 
 .inner-container {
   display: flex;
@@ -50,6 +43,14 @@ html,body{
   margin-top: 5%;
   background: transparent;
   width: 98%;
+}
+
+h1{
+  color: #fff724;
+  margin-left: 35%;
+  margin-top: 10%;
+  padding-bottom: -20%;
+  font-size: 50px;
 }
 
 .text1{
@@ -103,4 +104,28 @@ html,body{
   width: 75%;
   margin-left: 10%;
   background: transparent;
+}
+
+@media only screen and (max-width:1097px){
+  h1{
+    font-size: 30px;
+  }
+  .text1{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:715px){
+  .text1{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:571px){
+  h1{
+    font-size: 20px;
+  }
+  .text1{
+    font-size: 10px;
+    font-size: 8px;
+  }
 }

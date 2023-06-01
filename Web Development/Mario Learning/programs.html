@@ -1,75 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/programs.css">
-    <link rel="stylesheet" href="styles/footer.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
 
-    <title>Programs</title>
+  <title>Programs</title>
 </head>
-<body>
-    <div class="header">
-        <nav>
-            <img src="image/logo.png" alt="mario_logo" class="logo">
-            <img src="image/logoPhone.png" alt="mario_logo" class="logo_phone">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="prerequiste.html">Prerequisite</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="history.html">History</a></li>
-            </ul>
-            <img src="image/menu.png" alt="menu" class="mario_bros">
-        </nav>
-        <img src="image/menu.png" alt="menu" class="mario_brosPhone">
-    </div>
-    <div class="images">
-        <img src="image/marioFlag.png" alt="MarioWithFlag" class="MarioWithFlag">
-        <img src="image/Enemy.png" alt="Enemy" class="Enemy">
-    </div>
-    <h1 class="heading">Mario is learning</h1>
 
-    <div class="text-box">
-        <table>
-            <td>
-                <tr><a href="learning.html" class="TL">Learning Types</a></tr>
-                <tr><a href="algorithms.html" class="AL">Algorithms</a><br></tr>
-            </td>
-            <td>
-                <tr><a href="ds.html" class="DS">Data Structure</a></tr>
-                <tr><a href="blogs.html" class="N">Blogs</a><br></tr>
-            </td>
-        </table>
-        <a href="projects.html" class="btn">Projects</a>
+<body>
+  <div class="header">
+    <nav>
+      <img src="image/logo.png" alt="mario_logo" class="logo">
+      <img src="image/logoPhone.png" alt="mario_logo" class="logo_phone">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prerequiste.html">Prerequisite</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="history.html">History</a></li>
+      </ul>
+      <img src="image/menu.png" alt="menu" class="mario_bros">
+    </nav>
+    <img src="image/menu.png" alt="menu" class="mario_brosPhone">
+  </div>
+  <img src="image/marioFlag.png" alt="mario_image" class="mario_image">
+  <img src="image/Enemy.png" alt="Enemy" class="toads_image">
+  <h1 class="heading">Mario is learning</h1>
+
+
+
+
+  <style>
+    html,body{
+      overflow-x: none;
+    }
+    .container_phone {
+      display: none;
+    }
+
+    .mario_image {
+      display: block;
+      width: 20%;
+      margin-top: 10%;
+
+    }
+
+    .toads_image {
+      width: 15%;
+      display: block;
+      margin-top: -30%;
+      margin-left: 85%;
+    }
+
+    .heading {
+      margin-top: -50%;
+      margin-left: 48%;
+      color: #FFF724;
+      font-size: 300%;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 50%;
+      margin-left: 30%;
+      margin-top: -5%;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 30% 30%;
+      grid-gap: 150px;
+      justify-content: flex-end;
+      padding-right: 10%;
+    }
+
+    .grid-item {
+      border: 2px solid #FFF724;
+      padding: 20px;
+      text-align: center;
+      color: #FFF724;
+      border-radius: 10px;
+      width: 120%;
+      font-size: 20px;
+      direction: none;
+    }
+
+    .last-item {
+      background-color: #FFF724;
+      color: black;
+      justify-self: center;
+      grid-column: span 2;
+      width: 30%;
+    }
+
+    @media only screen and (max-width:1639px) {
+      .container {
+        display: none;
+      }
+
+      .heading {
+        margin-top: -50%;
+        margin-left: 40%;
+        color: #FFF724;
+        font-size: 300%;
+      }
+
+      .container_phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 5%;
+        margin-left: 650px;
+        width: 20%;
+      }
+
+      .grid-container_phone {
+        display: grid;
+        grid-template-columns: 25%;
+        grid-gap: 20px;
+        justify-content: flex-end;
+        padding-right: 5%;
+        margin-left: -10%;
+      }
+
+      .grid-item_phone {
+        border: 2px solid yellow;
+        padding: 20px;
+        text-align: center;
+        color: yellow;
+        border-radius: 10px;
+        margin-left: -500%;
+        direction: none ;
+
+      }
+
+      .last-item_phone {
+        background-color: yellow;
+        color: black;
+      }
+    }
+
+    @media only screen and (max-width:1331px) {
+      .container {
+        display: none;
+      }
+
+      .heading {
+        margin-top: -50%;
+        margin-left: 35%;
+        color: #FFF724;
+        font-size: 300%;
+      }
+
+      .container_phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 5%;
+        margin-left: 50%;
+        width: 20%;
+      }
+
+      .grid-container_phone {
+        display: grid;
+        grid-template-columns: 25%;
+        grid-gap: 20px;
+        justify-content: flex-end;
+        padding-right: 5%;
+        margin-left: -10%;
+      }
+
+      .grid-item_phone {
+        border: 2px solid yellow;
+        padding: 20px;
+        text-align: center;
+        color: yellow;
+        border-radius: 10px;
+        margin-left: -500%;
+
+      }
+
+      .last-item_phone {
+        background-color: yellow;
+        color: black;
+      }
+    }
+
+    @media only screen and (max-width:977px) {
+      .container {
+        display: none;
+      }
+
+      .heading {
+        margin-top: -50%;
+        margin-left: 35%;
+        color: #FFF724;
+        font-size: 300%;
+      }
+
+      .container_phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -5%;
+        margin-left: 50%;
+        width: 20%;
+      }
+
+      .grid-container_phone {
+        display: grid;
+        grid-template-columns: 25%;
+        grid-gap: 20px;
+        justify-content: flex-end;
+        padding-right: 5%;
+        margin-left: -10%;
+      }
+
+      .grid-item_phone {
+        border: 2px solid yellow;
+        padding: 20px;
+        text-align: center;
+        color: yellow;
+        border-radius: 10px;
+        margin-left: -500%;
+      }
+
+      .last-item_phone {
+        background-color: yellow;
+        color: black;
+      }
+    }
+
+    @media only screen and (max-width:831px) {
+      .mario_image {
+        display: block;
+        width: 30%;
+        margin-top: 10%;
+
+      }
+
+      .toads_image {
+        width: 25%;
+        display: block;
+        margin-top: -50%;
+        margin-left: 80%;
+      }
+
+      .container {
+        display: none;
+      }
+
+      .heading {
+        margin-top: -70%;
+        margin-left: 35%;
+        color: #FFF724;
+        font-size: 300%;
+      }
+
+      .container_phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -5%;
+        margin-left: 50%;
+        width: 20%;
+      }
+
+      .grid-container_phone {
+        display: grid;
+        grid-template-columns: 20%;
+        grid-gap: 10px;
+        justify-content: flex-end;
+        padding-right: 2%;
+        margin-left: -10%;
+      }
+
+      .grid-item_phone {
+        border: 2px solid yellow;
+        padding: 20px;
+        text-align: center;
+        color: yellow;
+        border-radius: 10px;
+        margin-left: -500%;
+      }
+
+      .last-item_phone {
+        background-color: yellow;
+        color: black;
+      }
+    }
+
+    @media only screen and (max-width:637px) {
+      .mario_image {
+        display: block;
+        width: 30%;
+        margin-top: 10%;
+
+      }
+
+      .heading{
+        font-size: 40px;
+      }
+
+      .toads_image {
+        width: 25%;
+        display: block;
+        margin-top: -50%;
+        margin-left: 80%;
+      }
+
+      .container {
+        display: none;
+      }
+
+      .container_phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -20%;
+        margin-left: 50%;
+        width: 20%;
+      }
+
+      .grid-container_phone {
+        display: grid;
+        grid-template-columns: 20%;
+        grid-gap: 10px;
+        justify-content: flex-end;
+        padding-right: 2%;
+        margin-left: -10%;
+      }
+
+      .grid-item_phone {
+        border: 2px solid yellow;
+        padding: 20px;
+        text-align: center;
+        color: yellow;
+        border-radius: 10px;
+        margin-left: -500%;
+        font-size: 10px;
+      }
+
+      .last-item_phone {
+        background-color: yellow;
+        color: black;
+      }
+
+
+    }
+    
+    @media only screen and (max-width:495px)
+    {
+      .mario_image {
+        display: block;
+        width: 30%;
+        margin-top: 10%;
+
+      }
+
+      .heading{
+        font-size: 25px;
+      }
+
+      .toads_image {
+        width: 25%;
+        display: block;
+        margin-top: -50%;
+        margin-left: 80%;
+      }
+
+      .container {
+        display: none;
+      }
+
+      .container_phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -10%;
+        margin-left: 50%;
+        width: 20%;
+      }
+
+      .grid-container_phone {
+        display: grid;
+        grid-template-columns: 20%;
+        grid-gap: 10px;
+        justify-content: flex-end;
+        padding-right: 2%;
+        margin-left: -10%;
+        
+      }
+
+      .grid-item_phone {
+        border: 2px solid yellow;
+        padding: 20px;
+        text-align: center;
+        color: yellow;
+        border-radius: 10px;
+        margin-left: -500%;
+        font-size: 10px;
+       
+
+      }
+
+      .last-item_phone {
+        background-color: yellow;
+        color: black;
+     }
+   }
+      @media only screen and (max-width:398px){
+      .mario_image {
+        display: block;
+        width: 30%;
+        margin-top: 40%;
+
+      }
+
+      .heading{
+        font-size: 23px;
+      }
+
+      .toads_image {
+        width: 25%;
+        display: block;
+        margin-top: -60%;
+        margin-left: 80%;
+      }
+
+      .container {
+        display: none;
+      }
+
+      .container_phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -40%;
+        margin-left: 50%;
+        width: 20%;
+      }
+
+      .grid-container_phone {
+        display: grid;
+        grid-template-columns: 20%;
+        grid-gap: 10px;
+        justify-content: flex-end;
+        padding-right: 2%;
+        margin-left: -10%;
+      }
+
+      .grid-item_phone {
+        border: 2px solid yellow;
+        padding: 10px;
+        text-align: center;
+        color: yellow;
+        border-radius: 10px;
+        margin-left: -500%;
+        font-size: 8px;
+        direction: none ;
+
+      }
+
+      .last-item_phone {
+        background-color: yellow;
+        color: black;
+      }
+    }
+
+  </style>
+
+<div class="container_phone">
+  <div class="grid-container_phone">
+    <div class="grid-item_phone"><a href="learning.html" style="text-decoration: none;">Types of learning</a></div>
+    <div class="grid-item_phone"><a href= "algorithms.html" style="text-decoration: none;">Algorithms</a></div>
+    <div class="grid-item_phone"><a href="blogs.html" style="text-decoration: none;">Blogs</a></div>
+    <div class="grid-item_phone"><a href="ds.html" style="text-decoration: none;">Data Structure</a></div>
+    <div class="grid-item_phone last-item_phone" style="text-decoration: none;"><a href="projects.html" style="text-decoration: none; background-color: #FFF724; color: black;" >Projects</a></p></div>
+  </div>
+</div>
+
+
+
+
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item"><a href="learning.html" style="text-decoration: none;">Types of learning</a></div>
+      <div class="grid-item"><a href= "algorithms.html" style="text-decoration: none;">Algorithms</a></div>
+      <div class="grid-item"><a href="blogs.html" style="text-decoration: none;">Blogs</a></div>
+      <div class="grid-item"><a href="ds.html" style="text-decoration: none;">Data Structure</a></div>
+      <div class="grid-item last-item" style="text-decoration: none;"><a href="projects.html" style="text-decoration: none; background-color: #FFF724; color: black;" >Projects</a></p></div>
     </div>
-    <div class="text-boxPhone">
-        <table>
-            <tr>
-            <td class="TL">
-                <a href="learning.html"><p>Types of learning</p></a>
-            </td>
-        </tr>
-        <tr>
-             <td>
-                <a href="algorithms.html" class="AL"><p> Algorithms</p></a><br>
-            </td>
-        </tr>
-        <tr >
-            <td>
-                <a href="ds.html" class="DS"><p>Data Structure</p></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="blogs.html" class="N"><p>Blogs</p></a><br>
-            </td>
-        </tr>
-        </table>
-        <a href="projects.html" class="btn">Projects</a>
-    </div>
+  </div>
 
 </body>
+
 </html>
