@@ -1,36 +1,136 @@
 .logo_footer{
-    
-    margin-top: 2%;
-    width: 12%;
-    cursor: pointer;
-    float: left;
+  width: 15%;
 }
 
-.marioText{
-    margin-top: 5%;
-    font-size: 150%;
-    padding-left: 5%;
-    padding-top: 5%;
-    float: left;
+span{
+  text-decoration: underline;
+}
+.text{
+  margin-left: 15%;
+  font-size: 25px;
+  margin-top: -5%;
 }
 
 .grid-container {
-    width: 70%;
-    margin-top: 15%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+}
+
+.grid-item img {
+  width: 15%;
+  /* height: 100px; */
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.machine-learning{
+  margin-left: 85%;
+  margin-top: -10%;
+  width: 10%;
+}
+.machine-learningText{
+  margin-left: 86%;
+}
+
+.finalText{
+  margin-left: 20%;
+  font-size: 22px;
+  color: #FFF724;
+}
+
+.grid-container_phone{
+  display: none;
+}
+
+@media only screen and (max-width:1354px){
+  hr{
+    margin-top: 10%;
   }
-  .grid-item {
-    display: grid;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+  .machine-learning,.machine-learningText{
+    margin-left: 80%;
+    font-size: 10px;
   }
-.text{
-    text-decoration: underline;
-    font-size: 70%;
-    text-align: center;
-    margin-left: 25%;
-    margin-top: -15%;
+  .finalText{
+    margin-left: 10%;
+    font-size: 15px;
+  }
+
+}
+@media only screen and (max-width:826px){
+  .text{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .text{
+    font-size: 15px;
+    margin-left: 30%;
+  }
+  .grid-container {
+    display: none;
+  }
+  .grid-container_phone{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15%;
+    margin-left: 5%;
+  }
+
+  .grid-item_phone{
+    display: flex;
+    align-items: center;
+  }
+
+  .grid-item_phone img {
+    width: 5%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .machine-learning{
+    width: 30%;
+    margin-left: 60%;
+  }
+
+  .machine-learningText{
+    margin-left: 60%;
+    font-size: 20px;
+  }
+
+
+  .finalText{
+    margin-top: 20%;
+  }
+
+}
+
+@media only screen and (max-width:552px) {
+  .logo_footer{
+    width: 20%;
+  }
+  .text{
+    margin-top: -5%;
+    margin-left: 20%;
+    font-size: 10px;
+  }
+  .machine-learning,.machine-learningText{
+    margin-left: 50%;
+    font-size: 15px;
+  }
+  .finalText{
+    margin-top: 5%;
+    font-size: 10px;
+  }
 }

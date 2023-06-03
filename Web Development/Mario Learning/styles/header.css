@@ -145,3 +145,63 @@ nav ul li a{
     }
 }
 
+
+
+
+.navigation-frame {
+    position: relative;
+  }
+  
+  .logo_phone_overlay{
+    width: 60%;
+    margin-top:  10%;
+    background-color: #1A2050 ;
+    cursor: pointer;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 9999;
+    overflow: auto;
+  }
+
+
+  
+
+  .overlay-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #1A2050;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+
+  }
+  
+  .overlay-menu li {
+    margin-top: 30%;
+    margin-bottom: 15px;
+    background-color: #1A2050;
+  }
+  
+  .overlay-menu a {
+   margin-left: 10%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1A2050;
+    font-size: 20px;
+  }
+  
