@@ -25,6 +25,18 @@
       </ul>
       <img src="image/menu.png" alt="menu" class="mario_bros">
     </nav>
+
+    <div class="overlay">
+      <ul class="overlay-menu">
+          <img src="image/logoPhone.png" alt="mario_logo" class="logo_phone_overlay">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="prerequiste.html">Prerequisite</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="history.html">History</a></li>
+      </ul>
+    </div>
+
     <img src="image/menu.png" alt="menu" class="mario_brosPhone">
   </div>
   <img src="image/marioFlag.png" alt="mario_image" class="mario_image">
@@ -38,7 +50,7 @@
     html,body{
       overflow-x: none;
     }
-    .container_phone {
+    .container-box_phone {
       display: none;
     }
 
@@ -63,7 +75,7 @@
       font-size: 300%;
     }
 
-    .container {
+    .container-box {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -73,7 +85,7 @@
       margin-top: -5%;
     }
 
-    .grid-container {
+    .grid-container-box {
       display: grid;
       grid-template-columns: 30% 30%;
       grid-gap: 150px;
@@ -81,7 +93,7 @@
       padding-right: 10%;
     }
 
-    .grid-item {
+    .grid-item-box {
       border: 2px solid #FFF724;
       padding: 20px;
       text-align: center;
@@ -101,7 +113,7 @@
     }
 
     @media only screen and (max-width:1639px) {
-      .container {
+      .container-box {
         display: none;
       }
 
@@ -112,7 +124,7 @@
         font-size: 300%;
       }
 
-      .container_phone {
+      .container-box_phone {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -122,7 +134,7 @@
         width: 20%;
       }
 
-      .grid-container_phone {
+      .grid-container-box_phone {
         display: grid;
         grid-template-columns: 25%;
         grid-gap: 20px;
@@ -131,7 +143,7 @@
         margin-left: -10%;
       }
 
-      .grid-item_phone {
+      .grid-item-box_phone {
         border: 2px solid yellow;
         padding: 20px;
         text-align: center;
@@ -149,7 +161,7 @@
     }
 
     @media only screen and (max-width:1331px) {
-      .container {
+      .container-box {
         display: none;
       }
 
@@ -160,7 +172,7 @@
         font-size: 300%;
       }
 
-      .container_phone {
+      .container-box_phone {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -170,7 +182,7 @@
         width: 20%;
       }
 
-      .grid-container_phone {
+      .grid-container-box_phone {
         display: grid;
         grid-template-columns: 25%;
         grid-gap: 20px;
@@ -179,7 +191,7 @@
         margin-left: -10%;
       }
 
-      .grid-item_phone {
+      .grid-item-box_phone {
         border: 2px solid yellow;
         padding: 20px;
         text-align: center;
@@ -196,7 +208,7 @@
     }
 
     @media only screen and (max-width:977px) {
-      .container {
+      .container-box {
         display: none;
       }
 
@@ -207,7 +219,7 @@
         font-size: 300%;
       }
 
-      .container_phone {
+      .container-box_phone {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -217,7 +229,7 @@
         width: 20%;
       }
 
-      .grid-container_phone {
+      .grid-container-box_phone {
         display: grid;
         grid-template-columns: 25%;
         grid-gap: 20px;
@@ -226,7 +238,7 @@
         margin-left: -10%;
       }
 
-      .grid-item_phone {
+      .grid-item-box_phone {
         border: 2px solid yellow;
         padding: 20px;
         text-align: center;
@@ -256,7 +268,7 @@
         margin-left: 80%;
       }
 
-      .container {
+      .container-box {
         display: none;
       }
 
@@ -267,7 +279,7 @@
         font-size: 300%;
       }
 
-      .container_phone {
+      .container-box_phone {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -277,7 +289,7 @@
         width: 20%;
       }
 
-      .grid-container_phone {
+      .grid-container-box_phone {
         display: grid;
         grid-template-columns: 20%;
         grid-gap: 10px;
@@ -286,7 +298,7 @@
         margin-left: -10%;
       }
 
-      .grid-item_phone {
+      .grid-item-box_phone {
         border: 2px solid yellow;
         padding: 20px;
         text-align: center;
@@ -320,11 +332,11 @@
         margin-left: 80%;
       }
 
-      .container {
+      .container-box {
         display: none;
       }
 
-      .container_phone {
+      .container-box_phone {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -334,7 +346,7 @@
         width: 20%;
       }
 
-      .grid-container_phone {
+      .grid-container-box_phone {
         display: grid;
         grid-template-columns: 20%;
         grid-gap: 10px;
@@ -343,7 +355,7 @@
         margin-left: -10%;
       }
 
-      .grid-item_phone {
+      .grid-item-box_phone {
         border: 2px solid yellow;
         padding: 20px;
         text-align: center;
@@ -361,67 +373,65 @@
 
     }
     
-    @media only screen and (max-width:495px)
-    {
-      .mario_image {
+    @media only screen and (max-width:495px){
+    .mario_image {
         display: block;
         width: 30%;
-        margin-top: 10%;
+        margin-top: 40%;
 
       }
 
       .heading{
-        font-size: 25px;
+        font-size: 23px;
       }
 
       .toads_image {
         width: 25%;
         display: block;
-        margin-top: -50%;
+        margin-top: -60%;
         margin-left: 80%;
       }
 
-      .container {
+      .container-box {
         display: none;
       }
 
-      .container_phone {
+      .container-box_phone{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        margin-top: -10%;
+        margin-top: -50%;
         margin-left: 50%;
         width: 20%;
       }
 
-      .grid-container_phone {
+      .grid-container-box_phone {
         display: grid;
         grid-template-columns: 20%;
         grid-gap: 10px;
         justify-content: flex-end;
         padding-right: 2%;
         margin-left: -10%;
-        
       }
 
-      .grid-item_phone {
+      .grid-item-box_phone {
         border: 2px solid yellow;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         color: yellow;
         border-radius: 10px;
         margin-left: -500%;
-        font-size: 10px;
-       
+        font-size: 8px;
+        direction: none ;
 
       }
 
       .last-item_phone {
         background-color: yellow;
         color: black;
-     }
-   }
+      }
+    }
       @media only screen and (max-width:398px){
       .mario_image {
         display: block;
@@ -441,21 +451,21 @@
         margin-left: 80%;
       }
 
-      .container {
+      .container-box {
         display: none;
       }
 
-      .container_phone{
+      .container-box_phone{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        margin-top: -40%;
+        margin-top: -80%;
         margin-left: 50%;
         width: 20%;
       }
 
-      .grid-container_phone {
+      .grid-container-box_phone {
         display: grid;
         grid-template-columns: 20%;
         grid-gap: 10px;
@@ -464,7 +474,7 @@
         margin-left: -10%;
       }
 
-      .grid-item_phone {
+      .grid-item-box_phone {
         border: 2px solid yellow;
         padding: 10px;
         text-align: center;
@@ -484,28 +494,162 @@
 
   </style>
 
-<div class="container_phone">
-  <div class="grid-container_phone">
-    <div class="grid-item_phone"><a href="learning.html" style="text-decoration: none;">Types of learning</a></div>
-    <div class="grid-item_phone"><a href= "algorithms.html" style="text-decoration: none;">Algorithms</a></div>
-    <div class="grid-item_phone"><a href="blogs.html" style="text-decoration: none;">Blogs</a></div>
-    <div class="grid-item_phone"><a href="ds.html" style="text-decoration: none;">Data Structure</a></div>
-    <div class="grid-item_phone last-item_phone" style="text-decoration: none;"><a href="projects.html" style="text-decoration: none; background-color: #FFF724; color: black;" >Projects</a></p></div>
+<div class="container-box_phone">
+  <div class="grid-container-box_phone">
+    <div class="grid-item-box_phone"><a href="learning.html" style="text-decoration: none;">Types of learning</a></div>
+    <div class="grid-item-box_phone"><a href= "algorithms.html" style="text-decoration: none;">Algorithms</a></div>
+    <div class="grid-item-box_phone"><a href="blogs.html" style="text-decoration: none;">Blogs</a></div>
+    <div class="grid-item-box_phone"><a href="ds.html" style="text-decoration: none;">Data Structure</a></div>
+    <div class="grid-item-box_phone last-item_phone" style="text-decoration: none;"><a href="projects.html" style="text-decoration: none; background-color: #FFF724; color: black;" >Projects</a></p></div>
   </div>
 </div>
 
 
 
 
-  <div class="container">
-    <div class="grid-container">
-      <div class="grid-item"><a href="learning.html" style="text-decoration: none;">Types of learning</a></div>
-      <div class="grid-item"><a href= "algorithms.html" style="text-decoration: none;">Algorithms</a></div>
-      <div class="grid-item"><a href="blogs.html" style="text-decoration: none;">Blogs</a></div>
-      <div class="grid-item"><a href="ds.html" style="text-decoration: none;">Data Structure</a></div>
-      <div class="grid-item last-item" style="text-decoration: none;"><a href="projects.html" style="text-decoration: none; background-color: #FFF724; color: black;" >Projects</a></p></div>
+  <div class="container-box">
+    <div class="grid-container-box">
+      <div class="grid-item-box"><a href="learning.html" style="text-decoration: none;">Types of learning</a></div>
+      <div class="grid-item-box"><a href= "algorithms.html" style="text-decoration: none;">Algorithms</a></div>
+      <div class="grid-item-box"><a href="blogs.html" style="text-decoration: none;">Blogs</a></div>
+      <div class="grid-item-box"><a href="ds.html" style="text-decoration: none;">Data Structure</a></div>
+      <div class="grid-item-box last-item" style="text-decoration: none;"><a href="projects.html" style="text-decoration: none; background-color: #FFF724; color: black;" >Projects</a></p></div>
     </div>
   </div>
+
+  
+
+
+
+  <!-- Footer -->
+  <div class="clear"></div>
+  <style>
+    .clear {
+      clear: both;
+      margin-top: 5%;
+    }
+
+    @media only screen and (max-width:610px) {
+      .clear {
+        margin-top: -80%;
+      }
+    }
+    @media only screen and (max-width:610px) {
+      .clear {
+        margin-top: -60%;
+      }
+    }
+    @media only screen and (max-width:400px) {
+    .clear {
+      margin-top: -95%;
+    }
+  }
+  </style>
+  <footer>
+    <hr>
+
+    <img src="image/logo.png" alt="mario_logo" class="logo_footer">
+    <p class="text">Mario learning, A step forward towards the life of machines </code>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="image/Research.png"" alt="Research">
+        <span><a href="reference.html">Research Page</a></span>
+      </div>
+      <div class="grid-item">
+        <img src="image/facebook.png" alt="facebook">
+        <span>Facebook</span>
+      </div>
+      <div class="grid-item">
+        <img src="image/Whatsapp.png" alt="Whatsapp">
+        <span>Whatsapp</span>
+      </div>
+      <div class="grid-item">
+        <img src="image/github.png" alt="github">
+        <span>Source code</span>
+      </div>
+      <div class="grid-item">
+        <img src="image/instagram.png" alt="instagram">
+        <span>Instagram</span>
+      </div>
+      <div class="grid-item">
+        <img src="image/twitter.png" alt="twitter">
+        <span>Twitter</span>
+      </div>
+    </div>
+
+    <div class="grid-container_phone">
+      <div class="grid-item_phone">
+        <img src="image/Research.png" alt="Research">
+        <span><a href="reference.html">Research Page</a></span>
+      </div>
+      <div class="grid-item_phone">
+        <img src="image/github.png" alt="github">
+        <span>Source code</span>
+      </div>
+      <div class="grid-item_phone">
+        <img src="image/facebook.png" alt="facebook">
+        <span>Facebook</span>
+      </div>
+      <div class="grid-item_phone">
+        <img src="image/instagram.png" alt="instagram">
+        <span>Instagram</span>
+      </div>
+      <div class="grid-item_phone">
+        <img src="image/Whatsapp.png" alt="Whatsapp">
+        <span>Whatsapp</span>
+      </div>
+      <div class="grid-item_phone">
+        <img src="image/twitter.png" alt="twitter">
+        <span>Twitter</span>
+      </div>
+    </div>
+    <img src="image/machine-learning.png" alt="Machine Leanring" class="machine-learning">
+    <p class="machine-learningText">Machines are Learning!!!</p>
+    <p class="finalText">“Machine Learning: A computer is able to learn from experience without being specifically
+      programmed.”</b>
+
+
+
+
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+  $('.logo_phone').click(function() {
+    $('.overlay').toggleClass('active');
+  });
+
+  $('.logo_phone_overlay').click(function() {
+    $('.overlay').removeClass('active');
+  });
+});
+
+const overlay = document.querySelector('.overlay');
+const logoPhone = document.querySelector('.logo_phone');
+const logoPhoneOverlay = document.querySelector('.logo_phone_overlay');
+
+logoPhone.addEventListener('click', function() {
+  overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+});
+
+logoPhoneOverlay.addEventListener('click', function() {
+  overlay.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+  if (!overlay.contains(event.target) && !logoPhone.contains(event.target)) {
+    overlay.style.display = 'none';
+  }
+});
+
+
+  </script>
+
+
+  
 
 </body>
 

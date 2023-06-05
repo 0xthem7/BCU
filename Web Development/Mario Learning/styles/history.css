@@ -1,5 +1,5 @@
 html,body{
-    height: 140%;
+    height: 100;
     overflow-x: hidden;
 }
 .Body{
@@ -185,20 +185,20 @@ h1{
     }
     .Lpipe{
         width: 15%;
-        margin-top: 130%;
+        margin-top:100%;
     }
     
     .mLooking{
         position: absolute;
         width: 10%;
         margin-left: -11%;
-        margin-top: 122.5%;
+        margin-top: 93%;
     }
     
     .Rpipe{
         position: absolute;
         width: 15%;
-        margin-top: 130%;
+        margin-top: 100%;
         margin-left: 70%;
     }
     
@@ -206,7 +206,7 @@ h1{
         position: absolute;
         width: 8%;
         margin-left: 73%;
-        margin-top: 119.5%;
+        margin-top: 89.5%;
     }
     
 }
@@ -227,20 +227,20 @@ h1{
     }
     .Lpipe{
         width: 16%;
-        margin-top: 150%;
+        margin-top:120%;
     }
     
     .mLooking{
         position: absolute;
         width: 10%;
         margin-left: -11%;
-        margin-top: 142.5%;
+        margin-top: 112.5%;
     }
     
     .Rpipe{
         position: absolute;
         width: 17%;
-        margin-top: 150%;
+        margin-top: 120%;
         margin-left: 70%;
     }
     
@@ -248,7 +248,7 @@ h1{
         position: absolute;
         width: 8%;
         margin-left: 73%;
-        margin-top: 139.5%;
+        margin-top: 109.5%;
     }
     
 }
@@ -267,31 +267,32 @@ h1{
         width: 90%;
         margin-left: -12%;
     }
-    .Lpipe{
-        width: 16%;
-        margin-top: 150%;
-    }
-    
-    .mLooking{
-        position: absolute;
-        width: 10%;
-        margin-left: -11%;
-        margin-top: 142.5%;
-    }
-    
-    .Rpipe{
-        position: absolute;
-        width: 17%;
-        margin-top: 150%;
-        margin-left: 70%;
-    }
-    
-    .Hmario{
-        position: absolute;
-        width: 8%;
-        margin-left: 73%;
-        margin-top: 139.5%;
-    }
+
+.Lpipe{
+    width: 16%;
+    margin-top:120%;
+}
+
+.mLooking{
+    position: absolute;
+    width: 10%;
+    margin-left: -11%;
+    margin-top: 112.5%;
+}
+
+.Rpipe{
+    position: absolute;
+    width: 17%;
+    margin-top: 120%;
+    margin-left: 70%;
+}
+
+.Hmario{
+    position: absolute;
+    width: 8%;
+    margin-left: 73%;
+    margin-top: 109.5%;
+}
     
 }
 

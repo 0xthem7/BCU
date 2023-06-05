@@ -166,6 +166,7 @@ nav ul li a{
   
   .overlay {
     display: none;
+    background-color: #1A2050 ;
     position: fixed;
     top: 0;
     left: 0;

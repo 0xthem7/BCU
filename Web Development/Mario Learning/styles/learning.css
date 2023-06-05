@@ -211,6 +211,8 @@ html,body{
 @media only screen and (max-width:730px) {
     .ds{
         width: 20%;
+        margin-top: -50%;
+        padding-bottom: 30%;
     }
     .stuff2{
         display: inline-block;
@@ -237,10 +239,20 @@ html,body{
 }
 
 
-
 @media only screen and (max-width:730px) {
     .ds{
-        width: 40%;
+        width: 20%;
+        margin-top: 5%;
+        padding-bottom: 20%;
+    }
+}
+
+@media only screen and (max-width:567px) {
+    .ds{
+        width: 30%;
+        margin-left: 20%;
+        margin-top: 10%;
+        padding-bottom: 30%;
     }
     .stuff2{
         display: inline-block;
@@ -259,6 +271,8 @@ html,body{
     }
 }
 
+
+
 @media only screen and (max-width:586px) {
     .stuff2{
         display: inline-block;
@@ -268,7 +282,6 @@ html,body{
     .so{
         margin-left: 20%;
         margin-top: -1%;
-        /* width: %; */
     }
     .robo{
         margin-top: -10%;
