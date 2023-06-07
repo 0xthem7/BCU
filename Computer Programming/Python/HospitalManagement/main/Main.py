@@ -28,7 +28,7 @@ def main():
     
     # keep trying to login tell the login details are correct
     while True:
-        if login(admin):
+        if Admin.login(admin):
             running = True # allow the program to run
             break
 
