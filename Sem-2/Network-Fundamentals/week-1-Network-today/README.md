@@ -22,3 +22,10 @@ A physical network diagram depicts the network topology with the physical aspect
 
 # Network Types
 
+* Home Networks: A group of devices - such as computers, game systems, printers, and mobile devices - that connected to the Internet and each other.
+* Small office and home office (SOHO): It allows computers in a home office or remote office to connect to a corporate network, or access centralized, shared resources
+* Businesses and large organizations: use networks to provide storage, and access to information on network servers. Provide email, instant messaging, and collaboration among employees. 
+* The Internet: It is a worldwide system of computer networks. Also known as "the Net"
+
+# LANS and WANS
+
