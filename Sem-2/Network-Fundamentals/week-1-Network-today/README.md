@@ -6,4 +6,6 @@
 
 # Topology Diagrams
 
-    
+A `Network Topology Diagrams` is a visual representation of a network's devices, connections, and paths, allowing to picutre how devices are interconnected and how they communicate with one another.
+
+![Topology Diagram](images/network-topology-diagram.png "Netwok topology diagram")
