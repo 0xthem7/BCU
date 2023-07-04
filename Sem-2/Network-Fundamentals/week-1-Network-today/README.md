@@ -28,4 +28,7 @@ A physical network diagram depicts the network topology with the physical aspect
 * The Internet: It is a worldwide system of computer networks. Also known as "the Net"
 
 # LANS and WANS
+* LAN : a collection of devices connected together in one physical location, such as a building, office, or home
+* WAN : the technology that connects your offices, data centers, cloud applications, and cloud storage together
+
 
