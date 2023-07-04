@@ -1,0 +1,100 @@
+.welcome {
+    font-size: 30px;
+    padding-left: 20px;
+    margin-left: 350px;
+    color: #D6E629;
+}
+
+.ethan {
+    font-size: 30px;
+    padding-left: 20px;
+    margin-left: 350px;
+    color: #D6E629;
+}
+
+.about img {
+    position: absolute;
+    width: 222px;
+    left: 26px;
+    top: 50%;
+}
+
+.question {
+    position: absolute;
+    font-size: 35px;
+    color: #FBD348;
+    margin-left: 350px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.about .describe {
+    position: absolute;
+    color: #fff;
+    width: 65%;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 350px;
+    padding-left: 20px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 135%;
+}
+
+@media only screen and (max-width:1328px) {
+
+    .welcome,
+    .ethan {
+        display: none;
+    }
+
+    .about .bird {
+        width: 13%;
+        margin-left: 2%;
+    }
+
+    .about {
+        width: 100%;
+        margin-left: -10%;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .bird {
+        display: none;
+    }
+
+    .about {
+        margin-left: -30%;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .bird {
+        display: none;
+    }
+
+    .about {
+        margin-left: -50%;
+    }
+}
+
+@media only screen and (max-width:536px) {
+    .bird {
+        display: none;
+    }
+
+    .question {
+        width: 80%;
+        margin-left: 50%;
+        font-size: 25px;
+    }
+
+    .about .describe {
+        width: 89%;
+        margin-left: 50%;
+    }
+}

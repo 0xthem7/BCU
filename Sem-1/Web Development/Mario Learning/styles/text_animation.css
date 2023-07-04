@@ -1,0 +1,21 @@
+.typed-out{
+    overflow: hidden;
+    width: 0;
+    /*These are to hide the text at first */
+    border-right: .15em solid white; /* This is to create typewriter cursoe */
+    animation: typing 1s forwards;
+}
+
+/* We will create a another block in html to confirm that typewriter cursor stop just before last letter */
+
+.container{
+    display: inline-block;
+}
+
+/*Making reveal animation using @keyframe rules*/
+@keyframes typing {
+    form {width: 0;}
+    to {width: 100%;}
+}
+
+/* This will change width from 0 to 100% */

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="image/logo.png" alt="Mario logo" class="logo">
+        <img src="image/logoPhone.png" alt="mario_logo" class="logo_phone">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>                
+                <li><a href="prerequiste.html">Prerequisite</a></li>                
+                <li><a href="programs.html">Programs</a></li>            
+                <li><a href="history.html">History</a></li>           
+            </ul>
+            <img src="image/menu.png" alt="menu" class="mario_bros">
+        </nav>
+        <img src="image/menu.png" alt="menu" class="mario_brosPhone">
+
+        <div class="overlay">
+            <ul class="overlay-menu">
+                <img src="image/logoPhone.png" alt="mario_logo" class="logo_phone_overlay">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="prerequiste.html">Prerequisite</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="input-container">
+        <form>
+            <p class="fullname">Full Name</p>
+            <input type="text" name="inputField" id="inputField">
+            <p class="email">E-mail</p>
+            <input type="text" name="inputField" id="inputField">
+            <p class="message">Message</p>
+            <input type="text" name="inputField" id="inputField"><div></div>   
+            <input type="submit">
+        </form>
+    </div>
+    <div class="L">
+         <img src="image/L.png" alt="L" class="lawit">
+    </div>
+
+
+ <!-- Footer -->
+ <div class="clear"></div>
+ <style>
+   .clear {
+     clear: both;
+     margin-top: 25%;
+   }
+
+   @media only screen and (max-width:610px) {
+     .clear {
+       margin-top: 30%;
+     }
+   }
+ </style>
+ <footer>
+   <hr>
+
+   <img src="image/logo.png" alt="mario_logo" class="logo_footer">
+   <p class="text">Mario learning, A step forward towards the life of machines </code>
+
+   <div class="grid-container">
+     <div class="grid-item">
+       <img src="image/Research.png"" alt="Research">
+       <span><a href="reference.html">Research Page</a></span>
+     </div>
+     <div class="grid-item">
+       <img src="image/facebook.png" alt="facebook">
+       <span>Facebook</span>
+     </div>
+     <div class="grid-item">
+       <img src="image/Whatsapp.png" alt="Whatsapp">
+       <span>Whatsapp</span>
+     </div>
+     <div class="grid-item">
+       <img src="image/github.png" alt="github">
+       <span>Source code</span>
+     </div>
+     <div class="grid-item">
+       <img src="image/instagram.png" alt="instagram">
+       <span>Instagram</span>
+     </div>
+     <div class="grid-item">
+       <img src="image/twitter.png" alt="twitter">
+       <span>Twitter</span>
+     </div>
+   </div>
+
+   <div class="grid-container_phone">
+     <div class="grid-item_phone">
+       <img src="image/Research.png" alt="Research">
+       <span><a href="reference.html">Research Page</a></span>
+
+     </div>
+     <div class="grid-item_phone">
+       <img src="image/github.png" alt="github">
+       <span>Source code</span>
+     </div>
+     <div class="grid-item_phone">
+       <img src="image/facebook.png" alt="facebook">
+       <span>Facebook</span>
+     </div>
+     <div class="grid-item_phone">
+       <img src="image/instagram.png" alt="instagram">
+       <span>Instagram</span>
+     </div>
+     <div class="grid-item_phone">
+       <img src="image/Whatsapp.png" alt="Whatsapp">
+       <span>Whatsapp</span>
+     </div>
+     <div class="grid-item_phone">
+       <img src="image/twitter.png" alt="twitter">
+       <span>Twitter</span>
+     </div>
+   </div>
+   <img src="image/machine-learning.png" alt="Machine Leanring" class="machine-learning">
+   <p class="machine-learningText">Machines are Learning!!!</p>
+   <p class="finalText">“Machine Learning: A computer is able to learn from experience without being specifically
+     programmed.”</b>
+
+
+
+
+ </footer>
+
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script>
+   $(document).ready(function() {
+ $('.logo_phone').click(function() {
+   $('.overlay').toggleClass('active');
+ });
+
+ $('.logo_phone_overlay').click(function() {
+   $('.overlay').removeClass('active');
+ });
+});
+
+const overlay = document.querySelector('.overlay');
+const logoPhone = document.querySelector('.logo_phone');
+const logoPhoneOverlay = document.querySelector('.logo_phone_overlay');
+
+logoPhone.addEventListener('click', function() {
+ overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+});
+
+logoPhoneOverlay.addEventListener('click', function() {
+ overlay.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+ if (!overlay.contains(event.target) && !logoPhone.contains(event.target)) {
+   overlay.style.display = 'none';
+ }
+});
+</script>
+</body>
+</html>
