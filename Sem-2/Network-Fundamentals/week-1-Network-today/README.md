@@ -33,7 +33,7 @@ A physical network diagram depicts the network topology with the physical aspect
 
 The Internet is a worldwide collection of interconnected networks - i.e. it is a collection of interconnected LANs and WANs
 
-# Intranet and Extranet
+# Intranet and Extranet 
 * An Intranet is a private network within an enterprise used to share company information and computing resources among employees
 * An Extranet is a private network similar to an interanet, but its typically open to external parties, such as business partners, suppliers, key customers etc
 ![Intranet and Extranet](images/intranet-extranet.png "Intranet Extranet")
@@ -45,4 +45,25 @@ The Internet is a worldwide collection of interconnected networks - i.e. it is a
 * DSL
 * Cable
 
+# Converged Network
+The geographical area covered by the network of a service provider. Traditionally communication networks are composed by disceret system which is certain service are responsible for broadcasting certain feature. However currently a `morden coverged network` can broadcaste multiple services.
+
+# Network Architecture
+It refers to the way network devices and services are structured to server the connectivity needs of client devices.
+
+* Types of Network Architectures
+    - P2P (Peer-to-peer)
+    - Client/Server 
+    
+* Basic characterstics of the network architects
+    - Fault Tolerance
+    - Scalability
+    - Quality of service (QOS)
+    - Security
+
+* Fault Tolerance
+It is a process that enables an operating system to respond to a faliure in hardware or software. A fault tolerant network is one that limits the number of affected devices during a device faliure.
+It is built to allow quick recovery when such a failure occurs. These networks depends on multiple paths between source and destination. If one of the paths fails the data is sent over a different link or device. Having multiple paths/devices to a destination is known as redundancy.
+
+![Fault Tolerance](images/Fault-network.png "Fault Tolerance")
 
