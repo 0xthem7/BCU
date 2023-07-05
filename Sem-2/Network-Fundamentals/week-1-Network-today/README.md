@@ -67,3 +67,48 @@ It is built to allow quick recovery when such a failure occurs. These networks d
 
 ![Fault Tolerance](images/Fault-network.png "Fault Tolerance")
 
+* Scalability
+It is the ability of a network to cope with increasing workloads by expanding the network's bandwidth capacity and supporting its physical expansion to new development areas.
+
+![Scalability](image/scalability.png "Scability")
+
+* Quality of Service (QOS)
+It is the use of mechanisms or technologies that work on a network to control traffic and ensure the performance of critical applications with limited networkcapacity.
+
+Congestion occurs when the demand for bandwidth exceeds the amount available.
+
+Network Congestion refers to reduce of Quality of service (QOS) that causes packet loss, queuing delay, or blocking of new connections.
+
+# Network Security
+- Inorder to achive the goals of network security there are three primary requirements.
+    * Confidentiality
+    * Integrity
+    * Availability
+
+# Network trends 
+    * Bring Your Own Device (BYOD)
+    * Online collaboration
+    * Video communications
+    * Cloud Computing
+
+# Technology Trends in the Home
+    * Smart home technology integrates
+    * Powerline networking for home networks.
+
+# Secutity threats
+* Viruses, worms, and Trojan horses
+* Spyware and adware
+* Zero-day attacks
+* Threat actor attacks 
+* Denial of service
+* Identity theft
+* Data interception
+
+# Security solutions
+* Antivirus and antispyware
+* Firewall filtering
+* Dedicated firewall system
+* Access control list (ACL)
+* Intrusion prevention system (IPS)
+* Virtual private Network (VPN)
+
