@@ -36,6 +36,9 @@ The Internet is a worldwide collection of interconnected networks - i.e. it is a
 # Intranet and Extranet 
 * An Intranet is a private network within an enterprise used to share company information and computing resources among employees
 * An Extranet is a private network similar to an interanet, but its typically open to external parties, such as business partners, suppliers, key customers etc
+
+
+
 ![Intranet and Extranet](images/intranet-extranet.png "Intranet Extranet")
 
 # Internet Connections
