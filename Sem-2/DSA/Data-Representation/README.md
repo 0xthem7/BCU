@@ -63,4 +63,14 @@ Compiling all the statements binary is used since it can be represented as (1 or
 |8.  |Boolean|Ture or false      | A boolean value               | 
 
             
+__QUIZ__
+* Storing a day of week requires how much bits?
+- 4 bits
+* Number of people in the world?
+- 64 bits
+* Number of stars in the universe ?
+- 128 bits
 
+### Two's complement - Negative#'s
+* A byte (i.e 8 bits) can represents integers in the range of -128 to 127
+* -1 is 
