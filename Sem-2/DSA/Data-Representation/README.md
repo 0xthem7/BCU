@@ -59,8 +59,8 @@ Compiling all the statements binary is used since it can be represented as (1 or
 |5.  |Float  |32 bits            |Single precision floating point|
 |6.  |Double |64 bits            |Double precision floating point|
 |    Other Types                                                 |
-|7.  |char   |16 bits             A single character
-              unicode character  |                               |
+|7.  |char   |16 bits            | A single character            |
+              unicode character                                 
 |8.  |Boolean|Ture or false      | A boolean value               | 
 
             
