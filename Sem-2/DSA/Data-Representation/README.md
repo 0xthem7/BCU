@@ -50,15 +50,15 @@ Compiling all the statements binary is used since it can be represented as (1 or
 
 |S.N.| Type  | Size              | Description                   |
 |----|-------|-------------------|-------------------------------|
-|     Integers                                                   |
+|    | Integers                                                   |
 |1.  |Byte   |8 bits             | Byte Length Integer           |
 |2.  |Short  |16 bits            |Short Integer                  |
 |3.  |Int    |32 bits            |Integer                        |
 |4.  |Long   |64 bits            |Long Integer                   |
-|    Real Numbers                                                |
+|    |Real Numbers                                                |
 |5.  |Float  |32 bits            |Single precision floating point|
 |6.  |Double |64 bits            |Double precision floating point|
-|    Other Types                                                 |
+|    |Other Types                                                 |
 |7.  |char   |16 bits unicode character            | A single character            |                         
 |8.  |Boolean|Ture or false      | A boolean value               | 
 
