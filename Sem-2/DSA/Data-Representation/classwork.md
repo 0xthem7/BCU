@@ -24,7 +24,7 @@
 
 ### Question
 **1. Convert decimal to binary:** 
-a. 23
+* a. 23
 * Represent in binary number 
 * 2^4 + 2^3 + 2^2 + 2^1 + 2^0
 *  16 +  8  +  4  +  2  +  1
