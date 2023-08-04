@@ -1,0 +1,6 @@
+per-order (rLR):
+	XYNABOZPM
+in order (LrR)
+	NABYOXPMZ
+post-order (LRr)
+	
