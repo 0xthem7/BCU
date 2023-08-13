@@ -109,7 +109,7 @@ ______________/ \ ______________
 ___|___________|________________
   \ /
 
-                    / \
+                   / \
  Application        |   |
  Transport          |   |
  Internet           |   |
@@ -134,3 +134,37 @@ ___|___________|________________
  /ooooooooooooooooooooooo/ /    (o o)
 /C=_____________________/_/    ==\o/==
 ```
+
+### TCP/IP Reference Model - Functions
+
+* Represents data to the user, plus encoding and dialouge control
+* Support communication between diverse device over diverse networks
+* Figure out best path in the network
+* Controls hardware device and media that make up the network
+
+PDU - Protocol Data unit 
+
+Encapsulation in  networking means adding up header of each layer as it passes through
+
+* Appilication layer - Header - message
+* Transport layer    - Header - Segment
+* Internet layer     - Header - Packet 
+* Network access     - Header - Frame
+
+De-encapsulation in networking means after receiving the bit stream, The web server and rebuild frame
+
+### Addressing and Naming Schems 
+* Physical address are used for local delivery only - do not provide network identity and cannot be routed
+* Logical address are used for end to end delivery - Provide network identity and can be routed
+
+
+### L3 logical Address
+
+End device - Route1 - Route2 - Final destination (End device)
+_______________________________________
+| Payload | Source       | Destination |
+|         |192.181.1.110 | 172.16.1.99 |
+_______________________________________|     
+
+
+
