@@ -69,4 +69,68 @@ HTTP -> TCP -> IP -> Ethernet
     * **ISO** is well know fro **OSI**
     * It is an objective to provide a protocol suite, (OSI protocol suite)
 
-###
+## TCP/IP and OSI Reference Models
+* Assits in protocol design
+* Fosters competition because products from different vendors can work together 
+* Change in one layer is done other layers are unaffected
+* Common language to describe networking functions and capabilites
+* Reference models are used to better understand functions and process involved in the networking 
+
+* Please - Do - Not - Throw - Selina - Pizza - Away
+
+                            _________
+                           /         /.
+    .-------------.       /_________/ |
+   /             / |      |         | |
+  /+============+\ |      | |====|  | |
+  ||C:\>whoami  || |      |         | |
+  ||0xtheM7     || |      | |====|  | |
+  ||            || |      |   ___   | |
+  ||            || |      |  |166|  | |
+  ||            ||/@@@    |   ---   | |
+  \+============+/    @   |_________|./.
+                     @          ..  ....'
+  ..................@     __.'.'  ''
+ /oooooooooooooooo//     ///
+/................//     /_/
+------------------
+
+* Application    / \ |
+* Presentation    |  |
+* Session         |  |
+* Transport       |  |
+* Network         |  |
+* Datalink        |  |
+* Physical        | \ /
+______________/ \ ______________
+   |           |   
+   |           |  Data 
+   |           |  Network 
+___|___________|________________
+  \ /
+
+                    / \
+* Application        |   |
+* Transport          |   |
+* Internet           |   |
+* Network Access     |   |
+                    <-----
+    !\ ________________________/!\
+    !!                         !! \
+    !!                         !!  \
+    !!                         !!  !
+    !!                         !!  !
+    !!                         !!  !
+    !!                         !!  !
+    !!                         !!  !
+    !!                         !!  /
+    !!_________________________!! /
+    !/_________________________\!/
+       __\_________________/__/!_
+      !_______________________!/ )
+    ________________________    (__
+   /oooo  oooo  oooo  oooo /!   _  )_
+  /ooooooooooooooooooooooo/ /  (_)_(_)
+ /ooooooooooooooooooooooo/ /    (o o)
+/C=_____________________/_/    ==\o/==
+
