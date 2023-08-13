@@ -77,7 +77,7 @@ HTTP -> TCP -> IP -> Ethernet
 * Reference models are used to better understand functions and process involved in the networking 
 
 * Please - Do - Not - Throw - Selina - Pizza - Away
-
+```
                             _________
                            /         /.
     .-------------.       /_________/ |
@@ -94,7 +94,7 @@ HTTP -> TCP -> IP -> Ethernet
  /oooooooooooooooo//     ///
 /................//     /_/
 ------------------
-
+```
 * Application    / \ |
 * Presentation    |  |
 * Session         |  |
@@ -115,6 +115,7 @@ ___|___________|________________
 * Internet           |   |
 * Network Access     |   |
                     <-----
+```   
     !\ ________________________/!\
     !!                         !! \
     !!                         !!  \
@@ -133,4 +134,4 @@ ___|___________|________________
   /ooooooooooooooooooooooo/ /  (_)_(_)
  /ooooooooooooooooooooooo/ /    (o o)
 /C=_____________________/_/    ==\o/==
-
+```
