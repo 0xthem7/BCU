@@ -95,13 +95,13 @@ HTTP -> TCP -> IP -> Ethernet
 /................//     /_/
 ------------------
 ```
-* Application    / \ |
-* Presentation    |  |
-* Session         |  |
-* Transport       |  |
-* Network         |  |
-* Datalink        |  |
-* Physical        | \ /
+ Application    / \ |
+ Presentation    |  |
+ Session         |  |
+ Transport       |  |
+ Network         |  |
+ Datalink        |  |
+ Physical        | \ /
 ______________/ \ ______________
    |           |   
    |           |  Data 
@@ -110,10 +110,10 @@ ___|___________|________________
   \ /
 
                     / \
-* Application        |   |
-* Transport          |   |
-* Internet           |   |
-* Network Access     |   |
+ Application        |   |
+ Transport          |   |
+ Internet           |   |
+ Network Access     |   |
                     <-----   
     !\ ________________________/!\
     !!                         !! \
