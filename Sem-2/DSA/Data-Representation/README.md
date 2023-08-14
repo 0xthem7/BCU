@@ -1,76 +1,80 @@
-# Data structure and Algorithm
-## BCU university
-__Creator Himansu Mahato__
+# Data Structure and Algorithms
 
-* Data Structure - How data is represented
-* Algorithm - How data is operated
+Data structure - How data is represented 
+Algorithm - How data is operated
 
-Data structure is a way of `organizing` and `storing` data in computer so that it can be accessed and modified efficiently.
-* It depends upon Time and Space complexity
+## Data Structre 
+    It is the way of storing data in a computer so that it can be accessed and modified efficiently.
 
-Data are represented as binary in computers
-
-Binary are used to store data for following reason
-* Computer works on transistor so the data can be managed as weather it on or off
-* On can be represented as __1__ and Off can be represented as __2__ 
-* With laser technology light can reflect in two different directions.
-
-Compiling all the statements binary is used since it can be represented as (1 or 0)
+### Binary 
+    Computer is two-state (binary) machine.
 
 
-**Question**
-* How do we use binary to represent the value we want to store?
-* How many switches (bits) do we need to represent this data type?
+### Quiz
+1. Storing the day of the week ?
+-> B. 4 bits
+2. Number of people in the world ?
+-> D. 16 bits
+3. Number of stars in the universe ?
+-> Around 80 bits 
+
+### Two's comlement
+Process 
+1. Convert number to binary
+2. Invert all the digits
+3. Add 1 to the result 
+
+example : Decimal = -110
+1. Binary for +110 = 01101110
+2. Inverted = 10010001
+3. 10010001 + 1 = 10010010
+4. Check 01101110 + 10010010 = 100000000 for 8 bits its 0
+
+### Decimal number representation
+For integers we use positive powers where as for decimals we can use negative powers.
+2^-1 = 1/2 = 0.5
+2^-2 = 1/2^2 = 1/4 = 0.25
+3^-2 = 1/3^2 = 1/27 = 0.037
+
+Base 2      Base 10
+   0.1  = 0.5
+  0.111 = 1*2^-1 + 1*2^-2 + 1*2^-3 = 0.5 + 0.25 + 0.125 = 0.875
+ 0.10001 = 1*2^-1 + 1*2^-5  = 0.5 + 0.03125 = 0.53125
 
 
-### Representing integers in bits
-
-* Tally scheme - The number represented by a sequence 10011011 is simple 5 since it has __5 (1 bits)__
-* Base 2 representation - The number is sum of the value of bits i.e. the right most bit is 1 the left one is 2 and 3, 8 ....  so (01001100) mean 64 + 8 + 4 =76 
 
 
-#### Number systems
-* Base 10 
-    - 0:9 -- 10^1
-    - 10:99 -- 10^2
-    - 100:999 -- 10^3
-    - 1000:9999 -- 10^4
-
-* Base 2 (0,1)
-    - 0:1 -- 2^1
-    - 2:3 -- 2^2
-    - 4:7 -- 2^3
-    
-
-### Data Representations
-* Byte is a smallest memory to store a data (8 bits = byte)
-* 1 byte allows to store upto 256 combinations of data representation (2^8 = 256)
-* 2 bytes can hold upto 65536(216) .
+### Primitive Data types in python
+1. Integers 
+2. Float 
+3. Strings
+4. Boolean
 
 
-|S.N.| Type  | Size              | Description                   |
-|----|-------|-------------------|-------------------------------|
-|    | Integers                                                   |
-|1.  |Byte   |8 bits             | Byte Length Integer           |
-|2.  |Short  |16 bits            |Short Integer                  |
-|3.  |Int    |32 bits            |Integer                        |
-|4.  |Long   |64 bits            |Long Integer                   |
-|    |Real Numbers                                                |
-|5.  |Float  |32 bits            |Single precision floating point|
-|6.  |Double |64 bits            |Double precision floating point|
-|    |Other Types                                                 |
-|7.  |char   |16 bits unicode character            | A single character            |                         
-|8.  |Boolean|Ture or false      | A boolean value               | 
+### Bits, Bytes and words - Nomenclature
+* Nibble - 4 bits (half byte)
+* Byte - 8 bits 
+* Word - a collection of 4 bytes, or 32 bits 
+* Kilobytes (KB) - 1024 bytes
+* Megabytes (MB) - 1024 kilobytes
+* Gigabytes (GB) - 1024 Megabytes
+* Terabytes (TB) - 1024 Gigabytes
+* Petabytes (PB) - 1024 Terabytes
+* Exabytes  (EB) - 1024 Petabytes  
 
-            
-__QUIZ__
-* Storing a day of week requires how much bits?
-- 4 bits
-* Number of people in the world?
-- 64 bits
-* Number of stars in the universe ?
-- 128 bits
+since kilo is 1000 another nomenclature came to existance 
 
-### Two's complement - Negative#'s
-* A byte (i.e 8 bits) can represents integers in the range of -128 to 127
-* -1 is 
+* Nibble - 4 bits (half a byte)
+* Byte - 8 bits 
+* Word - 32 bits
+* Kilobyte - 1000 bytes 
+* Megabyte - 1000 Kilobyte
+* Gigabyte - 1000 Megabyte
+
+(Note: windows considers KB - kibibyte etc, so a hard drive claiming to be 1 TB actually displays as 921.32 GB )
+
+
+## Memory system
+
+Computer program use varaible or data structure to store data in memory
+
